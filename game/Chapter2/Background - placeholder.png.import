@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d03knv4kjqbg"
-path="res://.godot/imported/Mba Berlina - placeholder.png-cde59d3080afe312a7d1a60b723af579.ctex"
+uid="uid://3mvep2ed0kbm"
+path="res://.godot/imported/Background - placeholder.png-97ab74a1785600b2ae83074f5ab1f550.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mba Berlina - placeholder.png"
-dest_files=["res://.godot/imported/Mba Berlina - placeholder.png-cde59d3080afe312a7d1a60b723af579.ctex"]
+source_file="res://Chapter2/Background - placeholder.png"
+dest_files=["res://.godot/imported/Background - placeholder.png-97ab74a1785600b2ae83074f5ab1f550.ctex"]
 
 [params]
 

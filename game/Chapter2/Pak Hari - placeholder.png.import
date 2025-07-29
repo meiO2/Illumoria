@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf10my5l8umbm"
-path="res://.godot/imported/Pak Hari - placeholder.png-94c2d04253355794cb4cc831842af471.ctex"
+path="res://.godot/imported/Pak Hari - placeholder.png-71e05634d35c19db38e0c7a8f2d7ccea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pak Hari - placeholder.png"
-dest_files=["res://.godot/imported/Pak Hari - placeholder.png-94c2d04253355794cb4cc831842af471.ctex"]
+source_file="res://Chapter2/Pak Hari - placeholder.png"
+dest_files=["res://.godot/imported/Pak Hari - placeholder.png-71e05634d35c19db38e0c7a8f2d7ccea.ctex"]
 
 [params]
 

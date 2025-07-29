@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buvlvcti3da2h"
-path="res://.godot/imported/Meja - placeholder.png-dbb3c73cb000fc4dc657714604824ac3.ctex"
+uid="uid://0irfa1iqx5xi"
+path="res://.godot/imported/Pak Turah - placeholder.png-9b4b5163d9c507c465d989f2f8464149.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Meja - placeholder.png"
-dest_files=["res://.godot/imported/Meja - placeholder.png-dbb3c73cb000fc4dc657714604824ac3.ctex"]
+source_file="res://Chapter2/Pak Turah - placeholder.png"
+dest_files=["res://.godot/imported/Pak Turah - placeholder.png-9b4b5163d9c507c465d989f2f8464149.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0irfa1iqx5xi"
-path="res://.godot/imported/Pak Turah - placeholder.png-ab8bc2072f17435333fadfef54e59670.ctex"
+uid="uid://ctxabo6lfra5a"
+path="res://.godot/imported/Pak Dewa - placeholder.png-b0759bacba0052641278a2dcd1a7afcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pak Turah - placeholder.png"
-dest_files=["res://.godot/imported/Pak Turah - placeholder.png-ab8bc2072f17435333fadfef54e59670.ctex"]
+source_file="res://Chapter2/Pak Dewa - placeholder.png"
+dest_files=["res://.godot/imported/Pak Dewa - placeholder.png-b0759bacba0052641278a2dcd1a7afcb.ctex"]
 
 [params]
 

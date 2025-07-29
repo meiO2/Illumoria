@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mvep2ed0kbm"
-path="res://.godot/imported/Background - placeholder.png-d514e58dee55d53e35eb3e9020748c63.ctex"
+uid="uid://buvlvcti3da2h"
+path="res://.godot/imported/Meja - placeholder.png-cfa97dc54275a2504ae00aa76883db29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background - placeholder.png"
-dest_files=["res://.godot/imported/Background - placeholder.png-d514e58dee55d53e35eb3e9020748c63.ctex"]
+source_file="res://Chapter2/Meja - placeholder.png"
+dest_files=["res://.godot/imported/Meja - placeholder.png-cfa97dc54275a2504ae00aa76883db29.ctex"]
 
 [params]
 
