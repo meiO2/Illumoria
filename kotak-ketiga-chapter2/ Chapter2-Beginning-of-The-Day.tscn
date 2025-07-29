@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgmv2gxy05clx"]
+
+[ext_resource type="Texture2D" uid="uid://3mvep2ed0kbm" path="res://Background - placeholder.png" id="1_pw15c"]
+[ext_resource type="Texture2D" uid="uid://buvlvcti3da2h" path="res://Meja - placeholder.png" id="2_3ex7e"]
+[ext_resource type="Texture2D" uid="uid://cf10my5l8umbm" path="res://Pak Hari - placeholder.png" id="3_o2hxe"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Background-kantor-koperasi" type="Sprite2D" parent="."]
+position = Vector2(-1.19209e-07, 0)
+scale = Vector2(0.562064, 0.561667)
+texture = ExtResource("1_pw15c")
+
+[node name="Meja-kantor-mas-Adi" type="Sprite2D" parent="Background-kantor-koperasi"]
+position = Vector2(0, 422)
+texture = ExtResource("2_3ex7e")
+
+[node name="Pak-Hari" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Pak-Hari"]
+position = Vector2(-3.00035e-06, 24.1517)
+scale = Vector2(0.440284, 0.439972)
+texture = ExtResource("3_o2hxe")
