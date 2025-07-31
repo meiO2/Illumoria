@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mvep2ed0kbm"
-path="res://.godot/imported/Background - placeholder.png-97ab74a1785600b2ae83074f5ab1f550.ctex"
+uid="uid://ctxabo6lfra5a"
+path="res://.godot/imported/Pak Dewa - placeholder.png-3d17366f9164568a6f8944480bc1b13b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Chapter2/Background - placeholder.png"
-dest_files=["res://.godot/imported/Background - placeholder.png-97ab74a1785600b2ae83074f5ab1f550.ctex"]
+source_file="res://Chapter2/Assets-Chapter2/Pak Dewa - placeholder.png"
+dest_files=["res://.godot/imported/Pak Dewa - placeholder.png-3d17366f9164568a6f8944480bc1b13b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buvlvcti3da2h"
-path="res://.godot/imported/Meja - placeholder.png-cfa97dc54275a2504ae00aa76883db29.ctex"
+uid="uid://d03knv4kjqbg"
+path="res://.godot/imported/Mba Berlina - placeholder.png-0602e6d4405007fe8928cec50f0eaeef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Chapter2/Meja - placeholder.png"
-dest_files=["res://.godot/imported/Meja - placeholder.png-cfa97dc54275a2504ae00aa76883db29.ctex"]
+source_file="res://Chapter2/Assets-Chapter2/Mba Berlina - placeholder.png"
+dest_files=["res://.godot/imported/Mba Berlina - placeholder.png-0602e6d4405007fe8928cec50f0eaeef.ctex"]
 
 [params]
 
