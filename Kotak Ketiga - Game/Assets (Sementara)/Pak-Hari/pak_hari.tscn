@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqk4eoe54tl3r"]
+
+[ext_resource type="Script" uid="uid://cpwdfl2rmawr5" path="res://Assets (Sementara)/Pak-Hari/PakHari.gd" id="1_pxrld"]
+[ext_resource type="Texture2D" uid="uid://cf10my5l8umbm" path="res://Assets (Sementara)/Pak-Hari/Pak Hari - placeholder.png" id="2_ptrvf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1i2n4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}],
+"loop": false,
+"name": &"Blink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}],
+"loop": true,
+"name": &"Look_Around",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ptrvf")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}]
+
+[node name="Pak Hari" type="Node2D"]
+script = ExtResource("1_pxrld")
+
+[node name="Pak-Hari" type="AnimatedSprite2D" parent="."]
+position = Vector2(-396, -225)
+scale = Vector2(0.428657, 0.428657)
+sprite_frames = SubResource("SpriteFrames_1i2n4")
+animation = &"Look_Around"
+script = ExtResource("1_pxrld")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="animation_finished" from="Pak-Hari" to="." method="_on_pak_hari_animation_finished"]
