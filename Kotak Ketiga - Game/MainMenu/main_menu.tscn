@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmuf0dxelwv54"]
+[gd_scene load_steps=5 format=3 uid="uid://cmuf0dxelwv54"]
+
+[ext_resource type="Script" uid="uid://4abh80odho26" path="res://MainMenu/main_menu.gd" id="1_nhkf3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
 bg_color = Color(1, 1, 1, 1)
@@ -7,32 +9,182 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_nhkf3"]
+color = Color(1, 1, 1, 1)
+thickness = 4
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_3w4mj"]
+color = Color(0, 0, 1, 1)
+thickness = 4
+
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -402.0
-offset_top = 9.0
-offset_right = -402.0
-offset_bottom = 9.0
+offset_left = 3.0
+offset_top = -10.0
+offset_right = 3.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nhkf3")
+
+[node name="background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="."]
+[node name="buttonstart" type="Button" parent="."]
+visible = false
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 14
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -119.5
-offset_top = -29.5
-offset_right = 119.5
-offset_bottom = 29.5
+offset_left = -3.0
+offset_top = 176.0
+offset_right = -2.0
+offset_bottom = 241.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Start Game"
+
+[node name="buttonoption" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -110.0
+offset_bottom = 53.0
+grow_horizontal = 0
+text = "options
+"
+
+[node name="optionspanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -305.0
+offset_top = -209.5
+offset_right = 305.0
+offset_bottom = 209.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="optionspanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -29.0
+offset_top = 23.5
+offset_right = 33.0
+offset_bottom = 46.5
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Options"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="optionspanel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 41.0
+offset_top = -96.5
+offset_right = 211.0
+offset_bottom = 87.5
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="Label2" type="Label" parent="optionspanel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Sound"
+
+[node name="Label5" type="Label" parent="optionspanel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Language"
+
+[node name="Label3" type="Label" parent="optionspanel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Help"
+
+[node name="Label4" type="Label" parent="optionspanel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Game Control"
+
+[node name="buttonclosepanel" type="Button" parent="optionspanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -88.0
+offset_top = 14.0
+offset_right = -13.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+text = "close
+"
+
+[node name="HSlider" type="HSlider" parent="optionspanel"]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 96.5
+offset_right = 534.0
+offset_bottom = 161.5
+theme_override_styles/slider = SubResource("StyleBoxLine_nhkf3")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_3w4mj")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_3w4mj")
+value = 50.0
+
+[node name="Button" type="Button" parent="optionspanel"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 153.5
+offset_right = 461.0
+offset_bottom = 192.5
+text = "(language)"
+
+[node name="Button2" type="Button" parent="optionspanel"]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 203.5
+offset_right = 463.0
+offset_bottom = 242.5
+text = "(help button)"
+
+[node name="Button3" type="Button" parent="optionspanel"]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 258.5
+offset_right = 463.0
+offset_bottom = 297.5
+text = "(set game control)"
+
+[node name="exitbutton" type="Button" parent="optionspanel"]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 336.5
+offset_right = 370.0
+offset_bottom = 375.5
+text = "exit game"
+
+[connection signal="pressed" from="buttonoption" to="." method="_on_buttonoption_pressed"]
+[connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonoption_pressed"]
+[connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonclosepanel_pressed"]
+[connection signal="pressed" from="optionspanel/exitbutton" to="." method="_on_exitbutton_pressed"]
