@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0irfa1iqx5xi"
-path="res://.godot/imported/Pak Turah - placeholder.png-c9aa5759f0de352158e1b703d6389029.ctex"
+uid="uid://onrng4pgxtd7"
+path="res://.godot/imported/Bu Sinta - placeholder.png-1e9c199553ee80b9697313bd8c026c47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Chapter2/Assets-Chapter2/Pak Turah - placeholder.png"
-dest_files=["res://.godot/imported/Pak Turah - placeholder.png-c9aa5759f0de352158e1b703d6389029.ctex"]
+source_file="res://Assets (Sementara)/Bu Sinta - placeholder.png"
+dest_files=["res://.godot/imported/Bu Sinta - placeholder.png-1e9c199553ee80b9697313bd8c026c47.ctex"]
 
 [params]
 

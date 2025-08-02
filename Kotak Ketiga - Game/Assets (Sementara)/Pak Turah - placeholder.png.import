@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mvep2ed0kbm"
-path="res://.godot/imported/Background - placeholder.png-4c950044eb3dfad3405144bcd334232e.ctex"
+uid="uid://0irfa1iqx5xi"
+path="res://.godot/imported/Pak Turah - placeholder.png-f5a6452a5547aec3bbf71b7c9d1943ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Chapter2/Assets-Chapter2/Background - placeholder.png"
-dest_files=["res://.godot/imported/Background - placeholder.png-4c950044eb3dfad3405144bcd334232e.ctex"]
+source_file="res://Assets (Sementara)/Pak Turah - placeholder.png"
+dest_files=["res://.godot/imported/Pak Turah - placeholder.png-f5a6452a5547aec3bbf71b7c9d1943ae.ctex"]
 
 [params]
 
