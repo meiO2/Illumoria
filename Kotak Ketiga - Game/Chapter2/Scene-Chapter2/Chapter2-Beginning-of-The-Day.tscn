@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgmv2gxy05clx"]
+[gd_scene load_steps=3 format=3 uid="uid://cgmv2gxy05clx"]
 
-[ext_resource type="Texture2D" uid="uid://3mvep2ed0kbm" path="res://Chapter2/Assets-Chapter2/Background - placeholder.png" id="1_5vwjq"]
-[ext_resource type="Texture2D" uid="uid://buvlvcti3da2h" path="res://Chapter2/Assets-Chapter2/Meja - placeholder.png" id="2_7nbik"]
-[ext_resource type="Texture2D" uid="uid://cf10my5l8umbm" path="res://Chapter2/Assets-Chapter2/Pak Hari - placeholder.png" id="3_2m233"]
+[ext_resource type="Texture2D" uid="uid://3mvep2ed0kbm" path="res://Assets (Sementara)/Background - placeholder.png" id="1_5vwjq"]
+[ext_resource type="Texture2D" uid="uid://buvlvcti3da2h" path="res://Assets (Sementara)/Meja - placeholder.png" id="2_7nbik"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,10 +15,3 @@ texture = ExtResource("1_5vwjq")
 [node name="Meja-kantor-mas-Adi" type="Sprite2D" parent="Background-kantor-koperasi"]
 position = Vector2(0, 422)
 texture = ExtResource("2_7nbik")
-
-[node name="Pak-Hari" type="CharacterBody2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="Pak-Hari"]
-position = Vector2(0.270168, -10.4211)
-scale = Vector2(0.574904, 0.574496)
-texture = ExtResource("3_2m233")
