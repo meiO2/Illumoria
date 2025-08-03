@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7naahoowswqj"]
+
+[ext_resource type="Texture2D" uid="uid://3mf31e4n42i3" path="res://Assets (Sementara)/Mas-Saleh/MasSaleh-Assets/MasSaleh-Normal-placeholder.png" id="1_f4s88"]
+[ext_resource type="Texture2D" uid="uid://ww26chq0tmqc" path="res://Assets (Sementara)/Mas-Saleh/MasSaleh-Assets/MasSaleh-Blink-placeholder.png" id="2_r1q50"]
+[ext_resource type="Texture2D" uid="uid://dft0jmmwcm6x2" path="res://Assets (Sementara)/Mas-Saleh/MasSaleh-Assets/MasSaleh-SLeft-placeholder.png" id="3_u6ip2"]
+[ext_resource type="Texture2D" uid="uid://q42mudqwxber" path="res://Assets (Sementara)/Mas-Saleh/MasSaleh-Assets/MasSaleh-SRight-placeholder.png" id="4_82yyk"]
+[ext_resource type="Script" uid="uid://da8imfewi802j" path="res://Assets (Sementara)/Mas-Saleh/MasSaleh.gd" id="5_n157n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o7x4m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f4s88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r1q50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_f4s88")
+}],
+"loop": false,
+"name": &"Blink",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f4s88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u6ip2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_f4s88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_82yyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_f4s88")
+}],
+"loop": false,
+"name": &"Look_Around",
+"speed": 1.0
+}]
+
+[node name="MasSaleh" type="Node2D"]
+
+[node name="Mas-Saleh" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_o7x4m")
+animation = &"Look_Around"
+script = ExtResource("5_n157n")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="timeout" from="Timer" to="Mas-Saleh" method="_on_timer_timeout"]

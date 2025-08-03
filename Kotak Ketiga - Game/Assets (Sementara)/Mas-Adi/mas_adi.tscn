@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://b4m1lu1sh6gvu"]
+
+[ext_resource type="Texture2D" uid="uid://leufms5fthgj" path="res://Assets (Sementara)/Mas-Adi/MasAdi-Assets/MasAdi-Normal-placeholder.png" id="1_j5c3u"]
+[ext_resource type="Texture2D" uid="uid://liuhhycri8hv" path="res://Assets (Sementara)/Mas-Adi/MasAdi-Assets/MasAdi-Blink-placeholder.png" id="2_1cuq2"]
+[ext_resource type="Texture2D" uid="uid://c72nu0mmjct7y" path="res://Assets (Sementara)/Mas-Adi/MasAdi-Assets/MasAdi-SLeft-placeholder.png" id="3_3nj52"]
+[ext_resource type="Texture2D" uid="uid://b21g7d6olf22u" path="res://Assets (Sementara)/Mas-Adi/MasAdi-Assets/MasAdi-SRight-placeholder.png" id="4_n1r3k"]
+[ext_resource type="Script" uid="uid://vi8fw1xvsm2y" path="res://Assets (Sementara)/Mas-Adi/MasAdi.gd" id="5_8flm2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wqek4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j5c3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1cuq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_j5c3u")
+}],
+"loop": false,
+"name": &"Blink",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j5c3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3nj52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_j5c3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n1r3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_j5c3u")
+}],
+"loop": false,
+"name": &"Look_Around",
+"speed": 1.0
+}]
+
+[node name="MasAdi" type="Node2D"]
+
+[node name="Mas-Adi" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wqek4")
+animation = &"Look_Around"
+script = ExtResource("5_8flm2")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="Mas-Adi" method="_on_timer_timeout"]

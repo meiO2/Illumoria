@@ -1,7 +1,7 @@
 extends Node
 
-@onready var PakHari = $"."
-@onready var Timer_PakHari = $"../Timer"
+@onready var BuSinta = $"."
+@onready var Timer_BuSinta = $"../Timer"
 
 func behaviour():
 	var possible_behaviour = ["Blink", "Look_Around"]
@@ -10,9 +10,9 @@ func behaviour():
 	var possible_wait_time = [5.0, 15.0, 10.0]
 	var choosen_wait_time = possible_wait_time.pick_random()
 	
-	PakHari.play(choosen_behaviour)
-	Timer_PakHari.wait_time = choosen_wait_time
-	Timer_PakHari.start()
+	BuSinta.play(choosen_behaviour)
+	Timer_BuSinta.wait_time = choosen_wait_time
+	Timer_BuSinta.start()
 
 func _ready():
 	behaviour()

@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://curfa7jqqruqp"]
+
+[ext_resource type="Texture2D" uid="uid://dv3tcsti60ras" path="res://Assets (Sementara)/Pak-Dewa/PakDewa-Assets/PakDewa-Normal-placeholder.png" id="1_nmsxq"]
+[ext_resource type="Texture2D" uid="uid://bncc2h0f66fx5" path="res://Assets (Sementara)/Pak-Dewa/PakDewa-Assets/PakDewa-Blink-placeholder.png" id="2_wi0xu"]
+[ext_resource type="Texture2D" uid="uid://bymulqu2lp5kb" path="res://Assets (Sementara)/Pak-Dewa/PakDewa-Assets/PakDewa-SLeft-placeholder.png" id="3_g415q"]
+[ext_resource type="Texture2D" uid="uid://cp8uru021y8nj" path="res://Assets (Sementara)/Pak-Dewa/PakDewa-Assets/PakDewa-SRight-placeholder.png" id="4_xrjkc"]
+[ext_resource type="Script" uid="uid://cu8qjpdp3mnrd" path="res://Assets (Sementara)/Pak-Dewa/PakDewa.gd" id="5_xrjkc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g415q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nmsxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wi0xu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_nmsxq")
+}],
+"loop": false,
+"name": &"Blink",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nmsxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g415q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_nmsxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xrjkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_nmsxq")
+}],
+"loop": false,
+"name": &"Look_Around",
+"speed": 1.0
+}]
+
+[node name="PakDewa" type="Node2D"]
+
+[node name="Pak-Dewa" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_g415q")
+animation = &"Look_Around"
+script = ExtResource("5_xrjkc")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="timeout" from="Timer" to="Pak-Dewa" method="_on_timer_timeout"]
