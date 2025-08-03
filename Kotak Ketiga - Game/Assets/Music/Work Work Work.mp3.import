@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0e6al2ut504c"
+path="res://.godot/imported/Work Work Work.mp3-0c5f24f3ee2cef438a5be8bf68fef271.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Work Work Work.mp3"
+dest_files=["res://.godot/imported/Work Work Work.mp3-0c5f24f3ee2cef438a5be8bf68fef271.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
