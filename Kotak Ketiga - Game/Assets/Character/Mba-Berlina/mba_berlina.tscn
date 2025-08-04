@@ -46,6 +46,8 @@ animations = [{
 [node name="Mba-berlina" type="Node2D"]
 
 [node name="Mba-Berlina" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2.00002, -40.6096)
+scale = Vector2(0.690476, 0.690476)
 sprite_frames = SubResource("SpriteFrames_kcx11")
 animation = &"Blink"
 script = ExtResource("1_2hlel")

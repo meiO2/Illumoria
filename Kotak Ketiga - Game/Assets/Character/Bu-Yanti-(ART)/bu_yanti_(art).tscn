@@ -45,11 +45,13 @@ animations = [{
 
 [node name="Bu-yanti-(art)" type="Node2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Bu-Yanti-(ART)" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, -40)
+scale = Vector2(0.690476, 0.690476)
 sprite_frames = SubResource("SpriteFrames_hgcsx")
 animation = &"Blink"
 script = ExtResource("5_rbmpg")
 
 [node name="Timer" type="Timer" parent="."]
 
-[connection signal="timeout" from="Timer" to="AnimatedSprite2D" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="Bu-Yanti-(ART)" method="_on_timer_timeout"]

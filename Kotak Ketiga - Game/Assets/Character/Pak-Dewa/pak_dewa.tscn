@@ -46,12 +46,12 @@ animations = [{
 [node name="PakDewa" type="Node2D"]
 
 [node name="Pak-Dewa" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, -41.1619)
+scale = Vector2(0.690476, 0.690476)
 sprite_frames = SubResource("SpriteFrames_g415q")
 animation = &"Look_Around"
 script = ExtResource("5_xrjkc")
 
 [node name="Timer" type="Timer" parent="."]
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="timeout" from="Timer" to="Pak-Dewa" method="_on_timer_timeout"]

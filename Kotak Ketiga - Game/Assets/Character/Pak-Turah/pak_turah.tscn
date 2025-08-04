@@ -46,6 +46,8 @@ animations = [{
 [node name="PakTurah" type="Node2D"]
 
 [node name="Pak-Turah" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, -41.3857)
+scale = Vector2(0.690476, 0.690476)
 sprite_frames = SubResource("SpriteFrames_tldyu")
 animation = &"Blink"
 script = ExtResource("5_kr8jt")

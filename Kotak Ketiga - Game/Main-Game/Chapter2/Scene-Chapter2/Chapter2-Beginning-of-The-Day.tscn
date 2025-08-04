@@ -18,8 +18,8 @@ texture = ExtResource("1_5vwjq")
 position = Vector2(0, 422)
 texture = ExtResource("2_7nbik")
 
-[node name="Pak Hari" parent="." instance=ExtResource("3_5vwjq")]
-position = Vector2(2.38419e-07, -44)
-scale = Vector2(1.63548, 1.63548)
-
 [node name="CanvasLayer" parent="." instance=ExtResource("4_6n8t0")]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Pak Hari" parent="." instance=ExtResource("3_5vwjq")]

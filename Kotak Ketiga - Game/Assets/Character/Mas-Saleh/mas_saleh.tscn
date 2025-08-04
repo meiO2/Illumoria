@@ -46,12 +46,12 @@ animations = [{
 [node name="MasSaleh" type="Node2D"]
 
 [node name="Mas-Saleh" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2.00002, -40.1619)
+scale = Vector2(0.690476, 0.690476)
 sprite_frames = SubResource("SpriteFrames_o7x4m")
 animation = &"Look_Around"
 script = ExtResource("5_n157n")
 
 [node name="Timer" type="Timer" parent="."]
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="timeout" from="Timer" to="Mas-Saleh" method="_on_timer_timeout"]

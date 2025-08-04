@@ -46,6 +46,8 @@ animations = [{
 [node name="BuSinta" type="Node2D"]
 
 [node name="Bu-Sinta" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, -40.5524)
+scale = Vector2(0.690476, 0.690476)
 sprite_frames = SubResource("SpriteFrames_ebspj")
 animation = &"Look_Around"
 script = ExtResource("1_6xg7x")

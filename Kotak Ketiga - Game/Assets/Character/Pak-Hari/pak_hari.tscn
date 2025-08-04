@@ -46,8 +46,8 @@ animations = [{
 [node name="Pak Hari" type="Node2D"]
 
 [node name="Pak-Hari" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -7.62939e-06)
-scale = Vector2(0.428657, 0.428657)
+position = Vector2(-2, -40)
+scale = Vector2(0.690519, 0.690519)
 sprite_frames = SubResource("SpriteFrames_1i2n4")
 animation = &"Look_Around"
 script = ExtResource("1_pxrld")
