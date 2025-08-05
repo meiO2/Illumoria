@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7mukfod2etbp"]
+
+[ext_resource type="Script" uid="uid://c5wvdvtu6surf" path="res://System/musictoplay.gd" id="1_e2o3o"]
+[ext_resource type="Texture2D" uid="uid://cvidac0ucbt8w" path="res://Assets/Area/Meja[LEBAR]-placeholder.png" id="2_koknf"]
+
+[node name="Chapter2-beginning-of-the-day-[table]" type="Node2D"]
+script = ExtResource("1_e2o3o")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Meja" type="Sprite2D" parent="."]
+position = Vector2(0.852906, 11.5)
+scale = Vector2(0.560833, 0.560833)
+texture = ExtResource("2_koknf")

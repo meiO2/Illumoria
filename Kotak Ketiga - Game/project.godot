@@ -15,6 +15,12 @@ run/main_scene="uid://cmuf0dxelwv54"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+MusicRun="*res://System/MusicRun.gd"
+MusicOffice="*res://System/music_office.tscn"
+Musictoplay="*res://System/musictoplay.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"
