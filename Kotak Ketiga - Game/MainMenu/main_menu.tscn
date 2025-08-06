@@ -1,20 +1,38 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmuf0dxelwv54"]
+[gd_scene load_steps=12 format=3 uid="uid://cmuf0dxelwv54"]
 
 [ext_resource type="Script" uid="uid://4abh80odho26" path="res://MainMenu/main_menu.gd" id="1_nhkf3"]
+[ext_resource type="Texture2D" uid="uid://ks1acuufb8mc" path="res://Assets/Object/settings icon.png" id="2_3w4mj"]
+[ext_resource type="AudioStream" uid="uid://lvu530xyijv2" path="res://Assets/Music/Comfort in the dark.mp3" id="3_5de1l"]
+[ext_resource type="Script" uid="uid://bdeh7yhc1gt3x" path="res://MainMenu/audio.gd" id="4_ajn5b"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
-bg_color = Color(1, 1, 1, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5de1l"]
+bg_color = Color(0.992157, 0.984314, 0.831373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3w4mj"]
+bg_color = Color(0.211765, 0.129412, 0.054902, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(0.211765, 0.129412, 0.054902, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3w4mj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajn5b"]
+bg_color = Color(0.211765, 0.129412, 0.054902, 1)
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_nhkf3"]
 color = Color(1, 1, 1, 1)
 thickness = 4
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_3w4mj"]
-color = Color(0, 0, 1, 1)
+color = Color(0.992157, 0.984314, 0.831373, 1)
 thickness = 4
 
 [node name="MainMenu" type="Control"]
@@ -37,6 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5de1l")
 
 [node name="buttonstart" type="Button" parent="."]
 visible = false
@@ -45,14 +64,16 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -3.0
-offset_top = 176.0
-offset_right = -2.0
-offset_bottom = 241.0
+offset_left = 184.0
+offset_top = 172.0
+offset_right = -136.0
+offset_bottom = 237.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 16
+theme_override_styles/hover = SubResource("StyleBoxFlat_3w4mj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3w4mj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Start Game"
 
@@ -62,11 +83,25 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -110.0
-offset_bottom = 53.0
+offset_left = -61.0
+offset_right = -5.0
+offset_bottom = 54.0
 grow_horizontal = 0
-text = "options
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3w4mj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3w4mj")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3w4mj")
+text = "
+
 "
+
+[node name="buttonoption2" type="Sprite2D" parent="buttonoption"]
+position = Vector2(10, 45)
+scale = Vector2(0.0976563, 0.0976563)
+texture = ExtResource("2_3w4mj")
+
+[node name="ComfortInTheDark" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5de1l")
+autoplay = true
 
 [node name="optionspanel" type="Panel" parent="."]
 layout_mode = 1
@@ -81,6 +116,7 @@ offset_right = 305.0
 offset_bottom = 209.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ajn5b")
 
 [node name="Label" type="Label" parent="optionspanel"]
 layout_mode = 1
@@ -141,7 +177,7 @@ theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 text = "close
 "
 
-[node name="HSlider" type="HSlider" parent="optionspanel"]
+[node name="audio" type="HSlider" parent="optionspanel"]
 layout_mode = 0
 offset_left = 258.0
 offset_top = 96.5
@@ -150,7 +186,11 @@ offset_bottom = 161.5
 theme_override_styles/slider = SubResource("StyleBoxLine_nhkf3")
 theme_override_styles/grabber_area = SubResource("StyleBoxLine_3w4mj")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_3w4mj")
-value = 50.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("4_ajn5b")
+audio_bus_name = "Master"
 
 [node name="Button" type="Button" parent="optionspanel"]
 layout_mode = 0
@@ -187,4 +227,5 @@ text = "exit game"
 [connection signal="pressed" from="buttonoption" to="." method="_on_buttonoption_pressed"]
 [connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonoption_pressed"]
 [connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonclosepanel_pressed"]
+[connection signal="value_changed" from="optionspanel/audio" to="." method="_on_audio_value_changed"]
 [connection signal="pressed" from="optionspanel/exitbutton" to="." method="_on_exitbutton_pressed"]
