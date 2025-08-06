@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7mukfod2etbp"]
+[gd_scene load_steps=4 format=3 uid="uid://b7mukfod2etbp"]
 
 [ext_resource type="Script" uid="uid://c5wvdvtu6surf" path="res://System/musictoplay.gd" id="1_e2o3o"]
 [ext_resource type="Texture2D" uid="uid://cvidac0ucbt8w" path="res://Assets/Area/Meja[LEBAR]-placeholder.png" id="2_koknf"]
+[ext_resource type="Texture2D" uid="uid://18efr1futwad" path="res://Assets/Object/PapanFormulir-placeholder.png" id="3_koknf"]
 
 [node name="Chapter2-beginning-of-the-day-[table]" type="Node2D"]
 script = ExtResource("1_e2o3o")
@@ -12,3 +13,7 @@ script = ExtResource("1_e2o3o")
 position = Vector2(0.852906, 11.5)
 scale = Vector2(0.560833, 0.560833)
 texture = ExtResource("2_koknf")
+
+[node name="Papan" type="Sprite2D" parent="Meja"]
+position = Vector2(779.46, 163.15)
+texture = ExtResource("3_koknf")
