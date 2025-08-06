@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq18dv3xodntd"
-path="res://.godot/imported/OPENING 3.jpg-858784a263b15bfe0b75125df49ec960.ctex"
+uid="uid://ba67yqmwj4lc1"
+path="res://.godot/imported/Cutscene 1 - placeholder.png-9263cf050199490738cb2537351c7884.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cutscenes/OPENING 3.jpg"
-dest_files=["res://.godot/imported/OPENING 3.jpg-858784a263b15bfe0b75125df49ec960.ctex"]
+source_file="res://Assets/Cutscenes/Bertemu-Pak-Turah/Cutscene 1 - placeholder.png"
+dest_files=["res://.godot/imported/Cutscene 1 - placeholder.png-9263cf050199490738cb2537351c7884.ctex"]
 
 [params]
 

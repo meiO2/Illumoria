@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn1sap0ksjjsq"
-path="res://.godot/imported/OPENING 2.jpg-bf78bad61180bc8d6650c186d19728a7.ctex"
+uid="uid://be8nhpcupj2rk"
+path="res://.godot/imported/OPENING 5.jpg-86d11cd2bcc364bfed56d5f918b79394.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cutscenes/OPENING 2.jpg"
-dest_files=["res://.godot/imported/OPENING 2.jpg-bf78bad61180bc8d6650c186d19728a7.ctex"]
+source_file="res://Assets/Cutscenes/Opening/OPENING 5.jpg"
+dest_files=["res://.godot/imported/OPENING 5.jpg-86d11cd2bcc364bfed56d5f918b79394.ctex"]
 
 [params]
 

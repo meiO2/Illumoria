@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=3 uid="uid://d022qkl7qh2l4"]
 
-[ext_resource type="Texture2D" uid="uid://bqr5pnejvjce3" path="res://Assets/Cutscenes/OPENING 1.jpg" id="1_la2f8"]
-[ext_resource type="Script" uid="uid://dpfbtd7j732vv" path="res://MainMenu/Cutscene/OpeningScene.gd" id="1_shsh6"]
-[ext_resource type="Texture2D" uid="uid://bn1sap0ksjjsq" path="res://Assets/Cutscenes/OPENING 2.jpg" id="2_shsh6"]
-[ext_resource type="Texture2D" uid="uid://bq18dv3xodntd" path="res://Assets/Cutscenes/OPENING 3.jpg" id="3_ergwj"]
-[ext_resource type="Texture2D" uid="uid://b3sa1af7g0pby" path="res://Assets/Cutscenes/OPENING 4.jpg" id="4_cxs1o"]
-[ext_resource type="Texture2D" uid="uid://be8nhpcupj2rk" path="res://Assets/Cutscenes/OPENING 5.jpg" id="5_ir6m5"]
-[ext_resource type="Texture2D" uid="uid://ccabs4vavqu78" path="res://Assets/Cutscenes/OPENING 6.jpg" id="6_p46w7"]
-[ext_resource type="Texture2D" uid="uid://d2sv2v4toe56b" path="res://Assets/Cutscenes/OPENING 7.jpg" id="7_gsobc"]
+[ext_resource type="Texture2D" uid="uid://bqr5pnejvjce3" path="res://Assets/Cutscenes/Opening/OPENING 1.jpg" id="1_la2f8"]
+[ext_resource type="Script" uid="uid://dpfbtd7j732vv" path="res://Main-Game/Cutscene/Opening/OpeningScene.gd" id="1_shsh6"]
+[ext_resource type="Texture2D" uid="uid://bn1sap0ksjjsq" path="res://Assets/Cutscenes/Opening/OPENING 2.jpg" id="2_shsh6"]
+[ext_resource type="Texture2D" uid="uid://bq18dv3xodntd" path="res://Assets/Cutscenes/Opening/OPENING 3.jpg" id="3_ergwj"]
+[ext_resource type="Texture2D" uid="uid://b3sa1af7g0pby" path="res://Assets/Cutscenes/Opening/OPENING 4.jpg" id="4_cxs1o"]
+[ext_resource type="Texture2D" uid="uid://be8nhpcupj2rk" path="res://Assets/Cutscenes/Opening/OPENING 5.jpg" id="5_ir6m5"]
+[ext_resource type="Texture2D" uid="uid://ccabs4vavqu78" path="res://Assets/Cutscenes/Opening/OPENING 6.jpg" id="6_p46w7"]
+[ext_resource type="Texture2D" uid="uid://d2sv2v4toe56b" path="res://Assets/Cutscenes/Opening/OPENING 7.jpg" id="7_gsobc"]
 
 [sub_resource type="Animation" id="Animation_4gdmf"]
 length = 0.001
