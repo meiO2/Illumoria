@@ -1,0 +1,8 @@
+2.0|Pak Turah: Ah.. Kamu dari koperasi Kotak Ketiga ya?
+3.6|Mas Adi: Ah, selamat siang pak. Betul saya Adi dari koperasi Kotak Ketiga. 
+4.0|Mas Adi: Disini saya datang untuk survey dan verifikasi data untuk peminjaman pak.
+4.6|Pak Turah: Peminjaman..? Yang pinjam, istri saya? Berlina?
+7.1|Mas Adi: Betul pak, ibu Berlina kemarin mengajukan peminjaman.
+9.3|Pak Turah: Oh...Haha...Baik.
+11.1|Pak Turah: Bu Yanti. Tolong panggilkan Berlina. 
+11.9|Bu Yanti: Baik Pak.
