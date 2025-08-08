@@ -425,8 +425,6 @@ modulate = Color(1, 1, 1, 0)
 scale = Vector2(0.563333, 0.563333)
 texture = ExtResource("7_gsobc")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_fytge")
@@ -451,3 +449,10 @@ default_color = Color(0, 0, 0, 0)
 points = PackedVector2Array(846, -366, 598, 365)
 width = 15.0
 default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="."]
+points = PackedVector2Array(-569, -324, -569, 317, 569, 317, 569, -317, -576, -317)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
