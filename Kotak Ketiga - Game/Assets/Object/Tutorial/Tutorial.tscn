@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://chm4ub3uj8s73"]
+
+[ext_resource type="Texture2D" uid="uid://cbeftmejvnt0f" path="res://Assets/Area/Kantor-Day.png" id="2_6fo4v"]
+[ext_resource type="Texture2D" uid="uid://buvlvcti3da2h" path="res://Assets/Area/Meja - placeholder.png" id="3_34tdq"]
+[ext_resource type="Texture2D" uid="uid://ddcvcym6nwhw7" path="res://Assets/Object/Tutorial/Tutorial-item.png" id="3_naw1r"]
+
+[node name="Tutorial" type="Node2D"]
+
+[node name="Background-kantor-koperasi" type="Sprite2D" parent="."]
+position = Vector2(-1.19209e-07, 0)
+scale = Vector2(0.562064, 0.561667)
+texture = ExtResource("2_6fo4v")
+
+[node name="Meja-kantor-mas-Adi" type="Sprite2D" parent="Background-kantor-koperasi"]
+visible = false
+position = Vector2(0, 422)
+texture = ExtResource("3_34tdq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(517, 69)
+scale = Vector2(0.709092, 0.709092)
+texture = ExtResource("3_naw1r")
