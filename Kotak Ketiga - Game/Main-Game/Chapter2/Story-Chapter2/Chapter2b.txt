@@ -1,0 +1,16 @@
+$Mas Adi | (Nomor…3? Ini bukan ya?)
+#1
+$Mas Adi | Permisi
+#2
+$Pak Dewa | Ya, siapa ya mas? Ada butuh apa?
+Saya Adi, dari Koperasi Kotak Ketiga Pak. Saya disini mau mengingatkan pembayaran kembali atas nama Dewa Sentosa. % Selamat pagi bapak, saya disini mau menagih kekurangan pembayaran.
+$Pak Dewa | Kamu dari koperasi Kotak Ketiga...? Suruhan Hari?
+$Mas Adi | Betul pak, atasan sa-
+$Pak Dewa | Denger ya mas. Bilang ke Bos kamu itu kalau saya udah bayar semua. Saya juga udah ngga kerja disitu lagi!
+$Mas Adi | Maaf pak tetapi kalau dari data saya-
+$Pak Dewa | Saya bilang saya sudah bayar semua! Bilang ke Hari, mau dia terror saya sampai saya mati pun, dia ngga bakal ketemu bukti buat tuntut saya. 
+#3
+Pak! Pak Dewa!? Pak! % Pak tolong buka pak! Pak Dewa?
+$Mas Adi | (...)
+$Mas Adi | (Bukti? Tuntut? Maksudnya?Pak Dewa ini siapa...)
+$Mas Adi | (Ah.. udah jam segini. Istirahat dulu deh baru ke rumah Mba Berlina...)
