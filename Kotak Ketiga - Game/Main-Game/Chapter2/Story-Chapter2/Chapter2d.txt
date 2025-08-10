@@ -1,0 +1,55 @@
+$Mas Adi | (ini.. Rumahnya serius disini?)
+$Mas Saleh | Mas! 
+$Mas Adi | eh? Mas?
+$Mas Saleh | Ahaha! Pas banget mas saya baru pulang sekolah. Mau Survey ya mas?
+Betul mas. Masnya masih ingat saya ya, haha! - Iya mas. Rumahnya masih jauh mas?
+#1
+$Mas Saleh | Ini mas Rumah saya, maaf ya mas agak susah dicari. 
+$Mas Adi | Ah iya mas...
+$Mas Adi | (...)
+$Mas Saleh | Masuk aja dulu mas, saya sambil panggil Ibu saya sebentar ya.
+$Mas Adi | Oh iya mas, silahkan.
+#2
+$Mas Adi | (...)
+$Mas Adi | (...)
+$Mas Adi | (Pak Hari...)
+$Pak Bambang | S-Siapa Kamu..?!
+Eh! S-selamat Sore Pak, Saya Adi Dari Koperasi Kotak Ketiga. % Hah? Saya- saya dari koperasi Kotak Ketiga pak-
+$Pak Bambang | K-Koperasi Kotak Ketiga?! Ngapain K-Kamu kesini! P-Pergi! P-Pergi kamu!
+$Ibu Sinta | Pak! Pak! Tenang dulu pak…
+$Pak Bambang | S-Sinta! Mereka Kesini lagi! P-pergi kamu!
+$Mas Saleh | Pak.. Pak tenang pak ini bukan Pak Hari kok.
+$Mas Adi | (Pak...Hari?)
+$Pak Bambang | Saya bilang pergi kamu! K-kalau tidak pergi saya-
+$Ibu Sinta | Tuh kan pak.. Ibu bilang apa tenang dulu.. Aduh..
+$Mas Saleh | Mas, maaf ya, kita ngobrol diluar aja ya mas.
+#3
+$Mas Adi | (...)
+$Mas Adi | (Bapaknya radang.. Tapi kok keliatannya..)
+$Mas Saleh | Maaf ya mas, soal bapak.
+Oh iya ngga papa mas.. % bapak sakit apa mas?
+$Mas Saleh | Bapak saya radang paru-paru mas. Udah lumayan lama radangnya
+$Mas Adi | Oh.. kalau tidak salah sudah 3 tahunan ya mas? Kemarin Ibu mengatakan seperti itu.
+$Mas Saleh | Hm? Sudah lama mas kalau radangnya, udah 5 atau 6 tahunan mungkin, kadang kambuh kadang seperti normal.
+$Mas Saleh | Mungkin yang ibu maksud 3 tahunan, itu sejak bapak tidak bisa kerja mas
+$Mas Adi | Oh..radangnya memburuk kah mas?
+$Mas Saleh | Iya mas, sebetulnya salah satu yang bikin radangnya kumat juga karena beliau.. Ya.. sedang ada penyakit mental.
+$Mas Adi | ...
+$Mas Adi | Maaf mas.. Saya ngga tau, saya-
+$Mas Saleh | Eh gapapa mas tenang aja! Saya udah biasa kok.
+$Mas Saleh | Sebetulnya saya juga mau ngomong ke Masnya sih. Masnya kan masih termasuk baru di koperasi Kotak Ketiga, Masnya bantu saya sama keluarga saya ya mas?
+$Mas Adi | Bantu gimana mas?
+$Mas Saleh | Sebetulnya dulu bapak saya pernah meminjam uang juga di koperasi Kotak Ketiga. tetapi..
+... % Gimana mas?
+$Mas Saleh | Ya sejujurnya saya juga tidak terlalu paham apa permasalahannya ya mas, tapi bisnis bapak saya pada saat itu bangkrut dan beliau jadi tidak dapat mengembalikan pinjamannya. 
+$Mas Saleh | Saya tahu masnya juga kerja di Koperasi Kotak Ketiga. Tapi mas kalau saya boleh memohon tolong permintaan peminjaman Ibu saya di loloskan ya mas?
+$Mas Saleh | Tolong kalau nanti Pak Hari menanyakan jangan sebutkan nama bapak saya mas. Kalau ngga nanti bisa ditolak.
+$Mas Adi | Mas, saya-
+$Mas Saleh | Saya paham mas kalau ini mungkin agak sulit di lakukan sama masnya. Saya paham masnya juga hanya pekerja biasa. Tapi mohon mas, saya mohon banget. Uangnya mau saya pakai untuk sekolah 3 tahun kedepan mas.
+$Mas Saleh | Tolong ya mas? Masnya mau bantu kami kan?
+$Mas Adi | (...)
+Saya usahakan ya mas % Maaf mas, saya tidak bisa.
+$Mas Adi | (...)
+$Mas Adi | (Pak Hari..)
+$Mas Adi | (Aduh, aku mulai mikir aneh-aneh...)
+$Mas Adi | (Saatnya balik ke kantor.)

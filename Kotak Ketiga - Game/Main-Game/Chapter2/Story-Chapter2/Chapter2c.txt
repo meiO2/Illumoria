@@ -1,0 +1,44 @@
+MC: (Ah ini rumahnya- Wah...)
+MC: (Bagus banget!)
+#1
+Permisi. Selamat Siang. % Siang.., Mba Berlina..
+#2
+[Ketuk lagi] - Permisi.. Mba Berlina..
+#3
+$??? | Halo mas, ada yang bisa saya bantu?
+$Mas Adi | Eh, siang Ibu. Saya kesini mencari Ibu Berlina? Apakah benar ini rumah beliau?
+$??? Ah iya benar mas, sebentar ya.
+#4
+$Mba Berlina | Halo mas. Silahkan.
+Halo mba, maaf ya mba saya baru sampai. % Siang mba, saya izin masuk ya.. 
+$Mba Berlina | Ya, ngga papa mas. Sebentar ya mas.
+$Mas Adi | Baik Mba.
+#5
+$Mba Berlina | Mas.. udah pulang?
+$Pak Turah | Hm? Iya dong, kan mau di survey. Masa mas ngga pulang, iyakan?
+$Mba Berlina | ...
+$Mas Adi | ...
+$Pak Turah | Silahkan mas duduk. 
+Baik pak, terimakasih. % (Mengangguk)
+$Pak Turah | Pak Hari masih ditempat masnya?
+Oh iya masih pak, Pak Harianto kan pak? % Oh iya pak. Pak Harianto ya?
+$Pak Turah | Hahaha.. Iya. Harianto. Udah lama ngga denger namanya. Iya kan Berlina?
+$Mba Berlina | ...
+$Pak Turah | Pak Hari sekarang gimana mas? Masih sombong kaya dulu ngga? Hahaha
+Ahaha, ngga ah pak. Pak Hari orangnya baik kok, ramah. % Haha.. ya begitulah pak
+$Pak Turah | Yasudah mas, masnya mau survey kan? Silahkan, silahkan.
+$Mba Berlina | Ah iya pak, saya menunggu Mba Berlina haha.
+$Pak Turah | Oh.. iya. Gimana si kamu Berlina...Sana dong temenin masnya survey.
+$Mba Berlina | ...
+$Mba Berlina | Mari mas. 
+#6
+$Mas Adi | Baik Mba, Mbanya bisa ke kantor sekitar 2 hari lagi ya mba sambil saya proses permintaanya. Terimakasih Mba.
+$Mba Berlina | Iya mas, makasih
+#7
+$Mas Adi | (...)
+$Mas Adi | (Akhirnya Selesai 1...)
+$Mas Adi | (...)
+$Mas Adi | (Pak Turah sama Mba Berlina tau Pak Hari...?)
+$Mas Adi | (Kalau gitu kenapa perlu repot-repot ajuin lewat aku...)
+$Mas Adi | (...)
+$Mas Adi | (Ah sudahlah)

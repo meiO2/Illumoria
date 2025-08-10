@@ -1,29 +1,17 @@
+#1
 $Pak Hari | Mas? Hari ini jadi mau survey? 
-- Jadi pak. Ada 2 pendaftar.
-- MC: Betul pak.
+Jadi pak. Ada 2 pendaftar. % MC: Betul pak.
 $Pak Hari | Oh.. yasudah mas. Oh iya, nanti pas survey jangan cuma liat di rumahnya aja ya, coba tanya tetangga atau yang lain biar dapet lebih banyak informasi.
 $Mas Hari | Siap pak. 
-!1
+#2 
 $Mas Adi | Ah.. kemana dulu ya..
-- Ke rumah Bu Sinta
-		MC: tapi masih pagi, mas Saleh ngga ada dirumah gimana ya..
-		[OPSI I] Pergi aja
-[OPSI II] Ke rumah Mba Berlina
-[OPSI II] Ke rumah Mba Berlina
-		MC: Katanya mba Berlina baru bisa pas siang, gimana ya..
-		[OPSI I] Pergi aja
-		[OPSI II] Ke rumah Bu sinta dulu
-
-[setelah player milih mau kemana, pak hari yang tdi udah pergi balik lagi]
-
-Pak Hari: Eh mas, nambah 1 lagi ya. Ada 1 peminjam yang masih belum bayar pinjamannya sampai sekarang. Masnya coba tagih ya. Ini formulir peminjamannya alamatnya ada disitu. 
-
-[OPSI I] MC: Eh? Nagih pak? Saya nagih juga?
-	[OPSI II] MC: Saya nagih hutang pak?
-
-Pak Hari: Lho ya iya mas, kalau ngga ditagih ya ngga bisa mas. Yasudah ya mas saya pergi dulu.
-
-MC: iya pak.
-MC: (...)
-MC: (Hadeh..)
-MC: (Yaudah kalo gitu nagih dulu deh)
+Ke rumah Bu Sinta % Ke rumah Mba Berlina
+#3
+$Pak Hari | Eh mas, nambah 1 lagi ya. Ada 1 peminjam yang masih belum bayar pinjamannya sampai sekarang. Masnya coba tagih ya. Ini formulir peminjamannya alamatnya ada disitu. 
+Eh? Nagih pak? Saya nagih juga? % Saya nagih hutang pak?
+$Pak Hari | Lho ya iya mas, kalau ngga ditagih ya ngga bisa mas. Yasudah ya mas saya pergi dulu.
+$Mas Adi | iya pak.
+#4
+$Mas Adi | (...)
+$Mas Adi | (Hadeh..)
+$Mas Adi | (Yaudah kalo gitu nagih dulu deh)

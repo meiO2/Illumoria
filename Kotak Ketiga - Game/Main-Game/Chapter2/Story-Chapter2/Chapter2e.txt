@@ -1,0 +1,19 @@
+$Mas Adi | Pak Hari.
+$Pak Hari | Mas Adi. Sudah selesai? 
+$Mas Adi | Sudah Pak, tapi-
+$Pak Hari | Besok saja ya mas.
+$Mas Adi | Oh.. Baik pak.
+#1
+#2
+#3
+$Pak Hari | Mas? Belum pulang ? saya duluan ya.
+$Mas Adi | Hah?! Eh iya pak.
+$Mas Adi | Selamat malam pak.
+$Pak Hari | Malam mas, duluan ya.
+$Mas Adi | Iya pak. 
+$Mas Adi | (Hampir)
+#4
+$Mas Adi | (Ini apaan...)
+#5
+$Mas Adi | (Kantor kosong sih...)
+$Mas Adi | (Aku harus nyari tau lagi.)
