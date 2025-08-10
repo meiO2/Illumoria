@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://cmuf0dxelwv54"]
 
-[ext_resource type="Script" uid="uid://4abh80odho26" path="res://MainMenu/main_menu.gd" id="1_nhkf3"]
+[ext_resource type="Script" uid="uid://4abh80odho26" path="res://ui/MainMenu/main_menu.gd" id="1_nhkf3"]
 [ext_resource type="Texture2D" uid="uid://ks1acuufb8mc" path="res://Assets/Object/settings icon.png" id="2_3w4mj"]
 [ext_resource type="AudioStream" uid="uid://lvu530xyijv2" path="res://Assets/Music/Comfort in the dark.mp3" id="3_5de1l"]
-[ext_resource type="Script" uid="uid://bdeh7yhc1gt3x" path="res://MainMenu/audio.gd" id="4_ajn5b"]
+[ext_resource type="Script" uid="uid://bdeh7yhc1gt3x" path="res://ui/MainMenu/audio.gd" id="4_ajn5b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5de1l"]
 bg_color = Color(0.992157, 0.984314, 0.831373, 1)

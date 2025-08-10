@@ -1,8 +1,9 @@
-[gd_scene load_steps=38 format=4 uid="uid://diui1bllafnn"]
+[gd_scene load_steps=39 format=4 uid="uid://diui1bllafnn"]
 
 [ext_resource type="Texture2D" uid="uid://cbeftmejvnt0f" path="res://Assets/Area/Kantor-Day.png" id="1_bsl7s"]
 [ext_resource type="Script" uid="uid://cuiyfoapl5jry" path="res://Main-Game/Chapter1/Script-Chapter1/Chapter1a.gd" id="1_o7416"]
 [ext_resource type="Texture2D" uid="uid://buvlvcti3da2h" path="res://Assets/Area/Meja - placeholder.png" id="2_o7416"]
+[ext_resource type="PackedScene" uid="uid://5n0kel01sev3" path="res://ui/Dialogbox/dialog_box.tscn" id="4_njct3"]
 
 [sub_resource type="Image" id="Image_xi63f"]
 data = {
@@ -1120,7 +1121,12 @@ visible = false
 position = Vector2(0, 422)
 texture = ExtResource("2_o7416")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DialogBox" parent="CanvasLayer" instance=ExtResource("4_njct3")]
+
 [node name="Label" type="Label" parent="."]
+visible = false
 offset_left = -513.0
 offset_top = 234.0
 offset_right = 515.0
@@ -1134,6 +1140,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Title" type="Label" parent="."]
+visible = false
 offset_left = -515.0
 offset_top = 175.0
 offset_right = 513.0
@@ -1147,12 +1154,14 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Option1" type="Button" parent="."]
+visible = false
 offset_left = 210.0
 offset_top = 81.0
 offset_right = 546.0
 offset_bottom = 118.0
 
 [node name="Option2" type="Button" parent="."]
+visible = false
 offset_left = 211.0
 offset_top = 132.0
 offset_right = 547.0
