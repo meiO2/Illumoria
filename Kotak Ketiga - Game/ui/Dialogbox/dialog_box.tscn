@@ -42,7 +42,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture2D_uqlbx")
 
-[node name="NameLabel" type="Label" parent="."]
+[node name="Title" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -61,7 +61,7 @@ theme_override_font_sizes/font_size = 24
 text = "Nama Karakter"
 horizontal_alignment = 1
 
-[node name="DialogLabel" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -98,7 +98,7 @@ grow_vertical = 2
 theme_override_constants/separation = 8
 alignment = 1
 
-[node name="Option1Button" type="Button" parent="ChoiceContainer"]
+[node name="Option1" type="Button" parent="ChoiceContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6snx1")
 theme_override_styles/normal = SubResource("StyleBoxTexture_3uk0f")
@@ -107,7 +107,7 @@ alignment = 0
 autowrap_mode = 3
 clip_text = true
 
-[node name="Option2Button" type="Button" parent="ChoiceContainer"]
+[node name="Option2" type="Button" parent="ChoiceContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6snx1")
 theme_override_styles/normal = SubResource("StyleBoxTexture_3uk0f")
