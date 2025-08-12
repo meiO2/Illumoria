@@ -7,7 +7,6 @@ signal choice_made(index)
 @onready var label = $Label
 @onready var timer = $Timer
 @onready var choice_container = $ChoiceContainer
-# Referensi ke tombol template kita
 @onready var choice_button_template = $ChoiceContainer/ChoiceButtonTemplate
 
 var typing_speed = 0.05
@@ -18,7 +17,6 @@ func _ready():
 	hide_all()
 	timer.connect("timeout", _on_timer_timeout)
 
-# --- FUNGSI UTAMA YANG DIPERBARUI ---
 
 func show_dialog(character_name, text):
 	hide_all()
@@ -34,27 +32,21 @@ func show_dialog(character_name, text):
 	timer.wait_time = typing_speed
 	timer.start()
 
-# Fungsi ini sekarang menerima sebuah ARRAY pilihan
 func show_choices(options_array):
 	hide_all()
 
-	# 1. Hapus tombol-tombol lama (jika ada)
 	for button in choice_container.get_children():
-		if button != choice_button_template: # Jangan hapus template-nya
+		if button != choice_button_template:
 			button.queue_free()
 
-	# 2. Buat tombol baru untuk setiap pilihan
 	for i in range(options_array.size()):
 		var choice_text = options_array[i]
 		
-		# Duplikat template untuk membuat tombol baru
 		var new_button = choice_button_template.duplicate()
 		new_button.text = choice_text
 		
-		# Hubungkan sinyal 'pressed' dengan mengirimkan indeks pilihan (i)
 		new_button.pressed.connect(func(): _on_choice_pressed(i))
 		
-		# Tambahkan tombol baru ke container dan tampilkan
 		choice_container.add_child(new_button)
 		new_button.show()
 
@@ -73,8 +65,6 @@ func hide_all():
 	label.hide()
 	choice_container.hide()
 	timer.stop()
-
-# --- Fungsi Internal & Sinyal ---
 
 func _on_timer_timeout():
 	if current_char_index < full_text.length():

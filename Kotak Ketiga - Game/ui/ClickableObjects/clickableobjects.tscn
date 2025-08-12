@@ -3,9 +3,9 @@
 [ext_resource type="Script" uid="uid://d0602u4egjvbr" path="res://ui/ClickableObjects/clickableobjects.gd" id="1_ounlw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n78ec"]
-size = Vector2(274.75, 109)
+size = Vector2(117, 33)
 
-[node name="clickableobjects" type="Node2D"]
+[node name="clickableobjects" type="Area2D"]
 script = ExtResource("1_ounlw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -13,5 +13,5 @@ position = Vector2(319, 457)
 scale = Vector2(0.15625, 0.118207)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(319, 458)
+position = Vector2(316.5, 486.5)
 shape = SubResource("RectangleShape2D_n78ec")
