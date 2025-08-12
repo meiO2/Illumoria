@@ -2,8 +2,7 @@ $Pak Hari | Mas Adi? Yuk kekantor saya, mau membahas hasil survey kan?
 $MC | Oh iya pak betul. Sebentar ya pak
 #1
 $Pak Hari | Silahkan mas.
-Pak Dewa % Bu Sinta % Mba Berlina
-$Pak Hari | Ada lagi mas? 
+@pilih_responden: Pak Dewa -> res://Main-Game/Chapter3/Story-Chapter3/OptionA1.txt % Bu Sinta -> res://Main-Game/Chapter3/Story-Chapter3/OptionA2.txt % Mba Berlina -> res://Main-Game/Chapter3/Story-Chapter3/OptionA3.txt
 $Mas Adi | S-sudah pak. Sudah semua. 
 $Pak Hari | Yasudah mas.
 $Mas Adi | Ini Bapak tidak mau baca berkasnya dulu mungkin pak?
@@ -35,7 +34,7 @@ $Pak Hari | Oh iya ngga papa mas. Ini juga pas sebentar lagi saya mau ketemu ora
 $Mas Adi | Iya pak, sama-sama.
 $Pak Hari | Oh ya sebentar mas..
 $Pak Hari | Ini bonusnya mas. Makasih ya.
-$Mas Adi: Oh... oh iya pak, makasih banyak ya pak.
+$Mas Adi | Oh... oh iya pak, makasih banyak ya pak.
 #7
 $Mas Adi | (Seratus- seratus ribu?)
 $Mas Adi | (Ambil berkas doang..?)

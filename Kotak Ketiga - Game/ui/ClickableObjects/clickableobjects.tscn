@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://4wi1t83yfcdi"]
+
+[ext_resource type="Script" uid="uid://d0602u4egjvbr" path="res://ui/ClickableObjects/clickableobjects.gd" id="1_ounlw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n78ec"]
+size = Vector2(274.75, 109)
+
+[node name="clickableobjects" type="Node2D"]
+script = ExtResource("1_ounlw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(319, 457)
+scale = Vector2(0.15625, 0.118207)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(319, 458)
+shape = SubResource("RectangleShape2D_n78ec")
