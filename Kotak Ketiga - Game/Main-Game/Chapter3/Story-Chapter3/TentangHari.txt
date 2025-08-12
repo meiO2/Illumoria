@@ -1,0 +1,11 @@
+$Mas Adi | Saya mau tanya.. Ibu kenal orang yang namanya Pak Hari ngga bu? Harianto?
+$Bu Kanti | Harianto ya. Harianto yang... dulu kerja sama pak Bambang ya?
+$Mas Adi | Iya bu betul.
+$Bu Kanti | Kenal sih mas. Dulu sebelum keluarga pak Bambang pindah kesini, pas rumah ini masih jadi tempat produksi saya sering lihat mereka bareng. 
+Oh iya bu? % Dulu ini tempat produksi apa bu?
+$Bu Kanti | Nah kalau itu saya kurang tahu mas. Pak Bambang ramah sih sama saya, orangnya suka ngasih barang gitu mas. Tapi.. mungkin yang punya usaha Pak Hari kali ya mas? Pak Hari sombong banget dulu, lihat saya saja ngga mau. Jadi saya sama sekali ngga tau didalem ada apa. Tertutup banget mas.
+$Bu Kanti | Tapi mas yang saya bingung dulu Pak Hari pernah datang, Pak hari jadi beda banget lho mas.
+Eh? Beda gimana bu? % Pak Hari?
+$Bu Kanti | beda mas! Tadi kan saya bilang Pak Hari sombong, sinis, terus terakhir kesini Pak Hari sopan banget mas, baik, bahkan nyapa saya nanya nama saya. 
+$Mas Adi | Kalau boleh tahu itu kapan bu?
+$Bu Kanti | Setelah Pak Bambang pindah kesini sih mas. Saya juga bingung. Kok bisa berubah banget..

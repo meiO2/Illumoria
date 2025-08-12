@@ -1,0 +1,10 @@
+[Kalo gaada ditempat dia klik]
+MC | (hm.. gadisini)
+MC | (gadisini juga)
+MC | (duh.. dimana ya..)
+[Kalo ketemu]:
+	MC | Nah! Eh?
+	(ketemu foto Pak Bambang sama Pak Hari + alamat dibelakangnya)
+	MC | ...
+	MC | (Beneren dong..)
+	MC | (udah deh, aku harus cepet!)

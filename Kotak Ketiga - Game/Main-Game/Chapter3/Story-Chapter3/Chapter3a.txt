@@ -1,0 +1,65 @@
+$Pak Hari | Mas Adi? Yuk kekantor saya, mau membahas hasil survey kan?
+$MC | Oh iya pak betul. Sebentar ya pak
+#1
+$Pak Hari | Silahkan mas.
+Pak Dewa % Bu Sinta % Mba Berlina
+$Pak Hari | Ada lagi mas? 
+$Mas Adi | S-sudah pak. Sudah semua. 
+$Pak Hari | Yasudah mas.
+$Mas Adi | Ini Bapak tidak mau baca berkasnya dulu mungkin pak?
+$Pak Hari | Hm? Gausah mas. 
+$Pak Hari | Oh iya mas. Masnya boleh tolong saya ambil berkas dirumah ngga ya? Kebetulan saya ada 1 surat jaminan punya nasabah ketinggalan.
+$Mas Adi | Eh? Ambil berkas? sekarang pak?
+$Pak Hari | Iya mas, bisa tolong saya mas? Nanti saya kasih bonus kok kayak biasa, tenang aja mas.
+Uh.. Boleh sih pak. % Iya pak, Bisa.
+$Mas Adi | (...)
+$Pak Hari | Sip.. tolong agak cepet ya mas, pakai mobil saya aja ngga papa. Berkasnya ada dikamar saya, dimeja kerja saya. Cuma 1 kok mas harusnya masnya lihat.
+$Mas Adi | Baik pak.
+$Pak Hari | Oh iya mas nanti sekalian ambilkan kacamata saya ya mas di mobil saya.
+$Mas Adi | Siap pak.
+#2
+$Mas Adi | (Kacamata..)
+#3
+$Mas Adi | (Berkasnya dikamar Pak Hari...)
+#4
+$Mas Adi | Apaan itu...
+$Mas Adi | (G-gila..Ada ruangan?!)
+$Mas Adi | (Ugh..pengap banget..)
+$Mas Adi | ...
+Turun. & Jangan Turun.
+#5
+$Mas Adi | (..aku harus balik kekantor sebelum Pak Hari nyariin.)
+#6
+$Mas Adi | Halo pak, maaf pak tadi macet. Ini ya pak buat berkas sama kacamatanya.
+$Pak Hari | Oh iya ngga papa mas. Ini juga pas sebentar lagi saya mau ketemu orangnya. Makasih banyak ya mas.
+$Mas Adi | Iya pak, sama-sama.
+$Pak Hari | Oh ya sebentar mas..
+$Pak Hari | Ini bonusnya mas. Makasih ya.
+$Mas Adi: Oh... oh iya pak, makasih banyak ya pak.
+#7
+$Mas Adi | (Seratus- seratus ribu?)
+$Mas Adi | (Ambil berkas doang..?)
+$Mas Adi | (Masa sih.. Pak Hari..)
+$Mas Adi | (Ngga masuk akal.)
+$Pak Hari | Mas saya duluan ya.
+$Mas Adi | ... oh.. Oh iya pak, mari.
+$Mas Adi | (...)
+$Mas Adi | (Udah jam pulang..)
+$Mas Adi | (Kerumah Bu Sinta deh.)
+#8
+$Mas Adi | (..?)
+$Mas Adi | (Pintunya Ketutup..?)
+$Bu Kanti | Mas? Nyari Bu Sinta?
+Oh, iya Bu. Lagi keluar ya bu? % Betul bu. Ada Ibunya ngga ya?
+$Bu Kanti | Wah, tadi sih lagi keluar mas.
+$Mas Adi | Keluar bu?
+$Bu Kanti | Iya mas, tadi pak Bambang kambuh lagi. Barusan banget Bu sinta sama Mas Saleh nganter bapak ke rumah sakit. 
+Oh...Bapak memang sering kambuh ya bu? % Kerumah sakit lagi bu?
+$Mas Adi | Iya Bu..Kasian
+$Mas Adi | oh ya bu. Kalau Ibu ngga keberatan, saya boleh tanya-tanya ngga bu?
+$Bu Kanti | oh? Boleh mas, mau nanya apa?
+Tentang Pak Hari % Tentang Usaha Pak Bambang % Tentang Pak Bambang
+$Mas Adi | Yasudah Bu, Kalau Bu sinta atau Mas Saleh udah pulang saya titip kasih tau untuk ke koperasi X ya bu.
+$Bu Kanti | Eh? Masnya dari koperasi X? 
+$Mas Adi | Betul bu, saya titip pesannya ya bu. Saya izin pergi dulu.
+$Bu Kanti | Eh? Oh.. baik mas, nanti saya sampaikan.
