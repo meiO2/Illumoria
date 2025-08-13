@@ -1,6 +1,6 @@
 $Pak Hari | Pagi mas Adi, hari ini kamu pindah ke unit peminjaman ya. 
 $Pak Hari | Kebetulan Bu Yani lagi cuti, kamu gantiin dulu ya, soalnya cuma kamu yang saya percaya bisa.
-Pagi Pak. Unit peminjaman pak? - Hah? Unit peminjaman pak?
+Pagi Pak. Unit peminjaman pak? % Hah? Unit peminjaman pak?
 $Pak Hari | Iya, sini ikut saya.
 $Pak Hari | Pekerjaan kamu gampang kok. Kalau ada orang datang mau meminjam uang, cek saja berkas mereka. 
 $Pak Hari | KTP, Slip Gaji, Buku Tabungan, oh jangan lupa Kartu Keluarga dan surat jaminan juga ya. 
@@ -18,15 +18,15 @@ $Mas Adi | Baik bu, sambil saya tanya-tanya ya bu.
 $Mas Adi | Kalau saya boleh tahu pinjaman ini Ibu ajukan untuk apa?
 $Bu Sinta | Untuk hidup aja si mas, sekarang apa-apa susah. Suami saya sakit, Anak masih perlu sekolah, saya sendiri kalau jualan di pasar saja tidak mencukupi. 
 $Bu Sinta | Uangnya paling saya pakai untuk buka warung sih mas, hitung-hitung bisa dapat pendapatan lebih banyak juga... 
-Oh Ibu jualan di pasar? Jualan apa bu? - Kenapa tidak dilanjutkan saja bu?
+Oh Ibu jualan di pasar? Jualan apa bu? % Kenapa tidak dilanjutkan saja bu?
 $Bu Sinta | Ya jajanan pasar biasa mas. 
 $Bu Sinta | Saya udah ngga kuat lagi mas kalau harus setiap hari jualan di pasar. Suami saya juga ngga bisa saya tinggal lama-lama mas. 
 $Bu Sinta | Kalau saya buka warung dirumah kan bisa lebih enak mas, ke pasar buat beli bahan aja Suami bisa saya jaga. 
-Oh... Suami berarti sudah tidak bekerja ya Ibu? - Maaf bu, suami sakit apa bu?
+@tanya_suami: Oh... Suami berarti sudah tidak bekerja ya Ibu? -> res://Main-Game/Chapter1/Story-Chapter1/OptionSuami1.txt - Maaf bu, suami sakit apa bu? -> res://Main-Game/Chapter1/Story-Chapter1/OptionSuami2.txt
 $Mas Adi | Ada surat dokter atau surat lain dari rumah sakit Ibu? Boleh saya lihat? Itu bisa jadi dokumen pendukung juga Bu.
 *3Bu Sinta | Oh ya, ini mas. Tadi pagi barusan antar Bapak periksa sama anak saya.
 #4
-Oh? Anak sudah sekolah ditingkat apa Bu? - Dirujuk ya bu.. Bapak sudah dirujuk bu?
+@tanya_anak: Oh? Anak sudah sekolah ditingkat apa Bu? -> res://Main-Game/Chapter1/Story-Chapter1/OptionA1.txt % Dirujuk ya bu.. Bapak sudah dirujuk bu? -> res://Main-Game/Chapter1/Story-Chapter1/OptionA2.txt
 #5
 $Bu Sinta | Gimana mas?
 $Mas Adi | Untuk sekarang saya perlu konfirmasi lebih lanjut dengan atasan saya, sekaligus memeriksa berkas Ibu. Tetapi untuk sementara ini, kalau saya simpan alamat rumah Ibu apakah boleh? Besok saya akan datang untuk survey.
@@ -56,7 +56,7 @@ $Mas Adi | Oh iya kak, tidak apa-apa. Silahkan duduk.
 #9
 $Mba Berlina | Sudah lengkap kan mas? Bisa dipercepat tidak ya? Saya masih ada acara lain setelah ini.
 $MC | Baik mba, untuk berkasnya sudah lengkap dan sudah saya bantu isikan di formulir juga. 
-Selanjutnya saya minta mba-nya untuk melengkapi alamat rumah di formulir berikut ya mba. - Baik mba, untuk yang terakhir  saya mau menanyakan beberapa hal lagi mba.
+@tanya_berlina: Selanjutnya saya minta mba-nya untuk melengkapi alamat rumah... -> res://Main-Game/Chapter1/Story-Chapter1/OptionB1.txt % Baik mba, untuk yang terakhir saya mau menanyakan beberapa hal lagi mba. -> res://Main-Game/Chapter1/Story-Chapter1/OptionB2.txt
 $Mas Adi | Baik Mba, sudah selesai. Besok saya akan kerumah dan nanti sekaligus akan saya kabari untuk tanggal Mba ke kantor lagi ya Mba. Terimakasih.
 $Mba Berlina | Baik mas, tapi saya pagi kayaknya ngga bisa mas. Mungkin siangnya saya baru dirumah.
 $Mas Adi | Baik Mba, akan saya usahakan.

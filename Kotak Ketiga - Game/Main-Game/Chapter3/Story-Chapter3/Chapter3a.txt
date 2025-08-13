@@ -3,14 +3,10 @@ $MC | Oh iya pak betul. Sebentar ya pak
 #1
 $Pak Hari | Silahkan mas.
 @pilih_responden: Pak Dewa -> res://Main-Game/Chapter3/Story-Chapter3/OptionA1.txt % Bu Sinta -> res://Main-Game/Chapter3/Story-Chapter3/OptionA2.txt % Mba Berlina -> res://Main-Game/Chapter3/Story-Chapter3/OptionA3.txt
-$Mas Adi | S-sudah pak. Sudah semua. 
-$Pak Hari | Yasudah mas.
-$Mas Adi | Ini Bapak tidak mau baca berkasnya dulu mungkin pak?
-$Pak Hari | Hm? Gausah mas. 
+$Pak Hari: Ada lagi mas? 
+@jawabanada : S-sudah pak. Sudah semua. -> res://Main-Game/Chapter3/Story-Chapter3/jawabanada1.txt % Ini Bapak tidak mau baca berkasnya dulu mungkin pak? -> res://Main-Game/Chapter3/Story-Chapter3/jawabanada2.txt
 $Pak Hari | Oh iya mas. Masnya boleh tolong saya ambil berkas dirumah ngga ya? Kebetulan saya ada 1 surat jaminan punya nasabah ketinggalan.
-$Mas Adi | Eh? Ambil berkas? sekarang pak?
-$Pak Hari | Iya mas, bisa tolong saya mas? Nanti saya kasih bonus kok kayak biasa, tenang aja mas.
-Uh.. Boleh sih pak. % Iya pak, Bisa.
+@jawabanberkas : Eh? Ambil berkas? sekarang pak? -> res://Main-Game/Chapter3/Story-Chapter3/jawabanberkas.txt % Uh.. Boleh sih pak.
 $Mas Adi | (...)
 $Pak Hari | Sip.. tolong agak cepet ya mas, pakai mobil saya aja ngga papa. Berkasnya ada dikamar saya, dimeja kerja saya. Cuma 1 kok mas harusnya masnya lihat.
 $Mas Adi | Baik pak.
@@ -25,7 +21,7 @@ $Mas Adi | Apaan itu...
 $Mas Adi | (G-gila..Ada ruangan?!)
 $Mas Adi | (Ugh..pengap banget..)
 $Mas Adi | ...
-Turun. & Jangan Turun.
+@pilihanturun : Turun. % Jangan Turun.
 #5
 $Mas Adi | (..aku harus balik kekantor sebelum Pak Hari nyariin.)
 #6

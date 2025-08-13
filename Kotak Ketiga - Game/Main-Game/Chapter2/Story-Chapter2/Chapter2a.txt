@@ -5,7 +5,7 @@ $Pak Hari | Oh.. yasudah mas. Oh iya, nanti pas survey jangan cuma liat di rumah
 $Mas Hari | Siap pak. 
 #2 
 $Mas Adi | Ah.. kemana dulu ya..
-Ke rumah Bu Sinta % Ke rumah Mba Berlina
+@kerumah : Ke rumah Bu Sinta -> res://Main-Game/Chapter2/Story-Chapter2/OptionA1.txt % Ke rumah Mba Berlina -> res://Main-Game/Chapter2/Story-Chapter2/OptionA2.txt
 #3
 $Pak Hari | Eh mas, nambah 1 lagi ya. Ada 1 peminjam yang masih belum bayar pinjamannya sampai sekarang. Masnya coba tagih ya. Ini formulir peminjamannya alamatnya ada disitu. 
 Eh? Nagih pak? Saya nagih juga? % Saya nagih hutang pak?

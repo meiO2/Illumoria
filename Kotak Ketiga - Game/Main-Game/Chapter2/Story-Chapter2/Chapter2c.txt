@@ -25,7 +25,7 @@ Oh iya masih pak, Pak Harianto kan pak? % Oh iya pak. Pak Harianto ya?
 $Pak Turah | Hahaha.. Iya. Harianto. Udah lama ngga denger namanya. Iya kan Berlina?
 $Mba Berlina | ...
 $Pak Turah | Pak Hari sekarang gimana mas? Masih sombong kaya dulu ngga? Hahaha
-Ahaha, ngga ah pak. Pak Hari orangnya baik kok, ramah. % Haha.. ya begitulah pak
+@tentangpakhari : Ahaha, ngga ah pak. Pak Hari orangnya baik kok, ramah. -> res://Main-Game/Chapter2/Story-Chapter2/OptionC1.txt % Haha.. ya begitulah pak -> res://Main-Game/Chapter2/Story-Chapter2/OptionC2.txt
 $Pak Turah | Yasudah mas, masnya mau survey kan? Silahkan, silahkan.
 $Mba Berlina | Ah iya pak, saya menunggu Mba Berlina haha.
 $Pak Turah | Oh.. iya. Gimana si kamu Berlina...Sana dong temenin masnya survey.
