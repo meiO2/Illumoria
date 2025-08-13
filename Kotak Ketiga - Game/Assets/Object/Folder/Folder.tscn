@@ -1,0 +1,98 @@
+[gd_scene load_steps=10 format=3 uid="uid://c7n6462slb47c"]
+
+[ext_resource type="Script" uid="uid://c7fnw5htya7tn" path="res://Assets/Object/Folder/Folder.gd" id="1_ltw8s"]
+[ext_resource type="Texture2D" uid="uid://cas8ak6eh4hrb" path="res://Assets/Object/Folder/Folder Buka.png" id="1_xtlkt"]
+[ext_resource type="Texture2D" uid="uid://6ymho0ftc866" path="res://Assets/Object/Folder/Rectangle 28.png" id="2_g7d7q"]
+[ext_resource type="Texture2D" uid="uid://woo6w302twnk" path="res://Assets/Object/Folder/Folder Tutup.png" id="2_x2kv6"]
+[ext_resource type="Script" uid="uid://biqfgmhios8h8" path="res://Assets/Object/Folder/dalemfolder.gd" id="3_6wglv"]
+[ext_resource type="Texture2D" uid="uid://c06mv6o3mhb01" path="res://Assets/Object/Berkas/KK - Pak Bambang.png" id="3_r5oxm"]
+[ext_resource type="Texture2D" uid="uid://n5wrte8haekr" path="res://Assets/Object/ID-Sinta/ID-Sinta.png" id="3_vmmqj"]
+[ext_resource type="Texture2D" uid="uid://cpktvua736p8" path="res://Assets/Object/Berkas/Slip Gaji palsu bu sinta.png" id="4_ltw8s"]
+[ext_resource type="Texture2D" uid="uid://bdysmths63rd8" path="res://Assets/Object/Berkas/Surat Tanah Pak Bambang.png" id="5_6wglv"]
+
+[node name="Folder" type="Node2D"]
+script = ExtResource("1_ltw8s")
+
+[node name="Buka" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_xtlkt")
+script = ExtResource("3_6wglv")
+
+[node name="KK" type="Sprite2D" parent="Buka"]
+position = Vector2(183, 9)
+rotation = -1.5708
+scale = Vector2(0.563183, 0.563183)
+texture = ExtResource("3_r5oxm")
+
+[node name="KK" type="Button" parent="Buka/KK"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -343.0
+offset_top = -256.0
+offset_right = 342.0
+offset_bottom = 256.0
+
+[node name="ID CARD2" type="Sprite2D" parent="Buka"]
+position = Vector2(266, -148)
+scale = Vector2(0.123047, 0.123047)
+texture = ExtResource("3_vmmqj")
+
+[node name="ID" type="Button" parent="Buka/ID CARD2"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.00845666
+anchor_bottom = 0.015625
+offset_left = -471.0
+offset_top = -252.0
+offset_right = 471.0
+offset_bottom = 252.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SlipGaji" type="Sprite2D" parent="Buka"]
+position = Vector2(269, 9)
+rotation = 4.71239
+scale = Vector2(0.224609, 0.224609)
+texture = ExtResource("4_ltw8s")
+
+[node name="SlipGaji" type="Button" parent="Buka/SlipGaji"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -481.0
+offset_top = -255.0
+offset_right = 475.0
+offset_bottom = 257.0
+
+[node name="Surat Tanah" type="Sprite2D" parent="Buka"]
+position = Vector2(184.125, 9.7082)
+scale = Vector2(0.759284, 0.759284)
+texture = ExtResource("5_6wglv")
+
+[node name="SuratTanah" type="Button" parent="Buka/Surat Tanah"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -187.0
+offset_top = -256.0
+offset_right = 188.0
+offset_bottom = 257.0
+
+[node name="Pembatas" type="Sprite2D" parent="Buka"]
+position = Vector2(322.375, 0.0386856)
+scale = Vector2(0.116457, 0.116457)
+texture = ExtResource("2_g7d7q")
+
+[node name="Tutup" type="Sprite2D" parent="."]
+position = Vector2(185, 0)
+texture = ExtResource("2_x2kv6")
+
+[node name="Button" type="Button" parent="Tutup"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -186.0
+offset_top = -258.0
+offset_right = 185.0
+offset_bottom = 257.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="Buka/KK/KK" to="." method="_on_kk_pressed"]
+[connection signal="pressed" from="Buka/KK/KK" to="Buka" method="_on_kk_pressed"]
+[connection signal="pressed" from="Buka/ID CARD2/ID" to="Buka" method="_on_id_pressed"]
+[connection signal="pressed" from="Buka/SlipGaji/SlipGaji" to="Buka" method="_on_slip_gaji_pressed"]
+[connection signal="pressed" from="Buka/Surat Tanah/SuratTanah" to="Buka" method="_on_surat_tanah_pressed"]
+[connection signal="pressed" from="Tutup/Button" to="." method="_on_button_pressed"]

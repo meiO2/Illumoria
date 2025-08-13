@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2r7mnn55aiy3"]
+
+[ext_resource type="Texture2D" uid="uid://cvidac0ucbt8w" path="res://Assets/Area/Meja[LEBAR]-placeholder.png" id="1_4h0ao"]
+[ext_resource type="Texture2D" uid="uid://n5wrte8haekr" path="res://Assets/Object/ID-Sinta/ID-Sinta.png" id="1_4kc7y"]
+[ext_resource type="Script" uid="uid://s286l7qn03se" path="res://Assets/Object/ID-Sinta/KlikBerkas.gd" id="1_8tosi"]
+
+[node name="Id-sinta" type="Node2D"]
+script = ExtResource("1_8tosi")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(7.27596e-12, 16)
+scale = Vector2(0.563333, 0.563333)
+texture = ExtResource("1_4h0ao")
+
+[node name="ID-Koperasi" type="Sprite2D" parent="."]
+position = Vector2(-118, -49)
+scale = Vector2(0.108674, 0.108674)
+texture = ExtResource("1_4kc7y")
+
+[node name="Button" type="Button" parent="ID-Koperasi"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.458824)
+
+[node name="ID-Koperasi" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(600, 314)
+scale = Vector2(0.597481, 0.597481)
+texture = ExtResource("1_4kc7y")
