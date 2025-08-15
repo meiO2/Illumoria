@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://diui1bllafnn"]
+[gd_scene load_steps=6 format=3 uid="uid://diui1bllafnn"]
 
 [ext_resource type="Texture2D" uid="uid://cbeftmejvnt0f" path="res://Assets/Area/Kantor-Day.png" id="1_bsl7s"]
 [ext_resource type="Script" uid="uid://cuiyfoapl5jry" path="res://Main-Game/Chapter1/Script-Chapter1/Chapter1a.gd" id="1_o7416"]
 [ext_resource type="Texture2D" uid="uid://buvlvcti3da2h" path="res://Assets/Area/Meja - placeholder.png" id="2_o7416"]
+[ext_resource type="Script" uid="uid://dtu2nmnxtyfj1" path="res://System/dialog_script.gd" id="4_8k6v7"]
 [ext_resource type="PackedScene" uid="uid://5n0kel01sev3" path="res://ui/Dialogbox/dialog_box.tscn" id="4_njct3"]
 
-[node name="Chapter1a" type="Node2D"]
+[node name="Chapter1a" type="Node2D" node_paths=PackedStringArray("dialog_manager")]
 script = ExtResource("1_o7416")
+dialog_manager = NodePath("DialogManager")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -19,6 +21,9 @@ texture = ExtResource("1_bsl7s")
 position = Vector2(0, 422)
 texture = ExtResource("2_o7416")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="DialogManager" type="Node2D" parent="."]
+script = ExtResource("4_8k6v7")
 
-[node name="DialogBox" parent="CanvasLayer" instance=ExtResource("4_njct3")]
+[node name="CanvasLayer" type="CanvasLayer" parent="DialogManager"]
+
+[node name="DialogBox" parent="DialogManager/CanvasLayer" instance=ExtResource("4_njct3")]

@@ -1,6 +1,7 @@
 extends Node
 @onready var dialog_box = $CanvasLayer/DialogBox
 
+signal all_dialog_finished
 
 var entries = [] 
 var current_path = ""
@@ -13,8 +14,6 @@ var visited_choices = {}
 func _ready():
 	dialog_box.dialog_finished.connect(_on_dialog_finished)
 	dialog_box.choice_made.connect(_on_choice_made)
-	
-	start_game()
 
 func _input(event):
 	if not dialog_box.visible:
@@ -26,16 +25,16 @@ func _input(event):
 		elif can_advance:
 			show_entry(current_index + 1)
 
-func start_game():
+func start_dialog_from_file(path: String):
 	story_stack.clear()
 	visited_choices.clear()
-	var main_story_path = "res://Main-Game/Chapter3/Story-Chapter3/Chapter3a.txt"
-	load_and_show(main_story_path)
+	load_and_show(path)
 
 func load_and_show(path):
+	# (Sisa skrip Anda tidak perlu diubah sama sekali)
 	current_path = path
 	load_entries(path)
-	show_entry(0) 
+	show_entry(0)
 
 func load_entries(path):
 	entries.clear()
@@ -90,7 +89,7 @@ func show_entry(index):
 			load_and_show(return_state.path)
 			show_entry(return_state.index)
 		else:
-			dialog_box.hide_all()
+			all_dialog_finished.emit()
 		return
 
 	can_advance = false

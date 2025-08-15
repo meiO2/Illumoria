@@ -6,7 +6,7 @@ func _ready():
 	if dialog_manager:
 		dialog_manager.all_dialog_finished.connect(_on_all_dialog_finished)
 		
-		var story_file = "res://Main-Game/Chapter1/Story-Chapter1/Chapter1a.txt" #filetxtdisceneini
+		var story_file = "res://Main-Game/Chapter3/Story-Chapter3/Chapter3b.txt"
 		dialog_manager.start_dialog_from_file(story_file)
 	else:
 		printerr("ERROR: DialogManager belum di-assign!")
