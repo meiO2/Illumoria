@@ -1,0 +1,10 @@
+$Pak Hari | Mas Adi.
+$Mas Adi | I-Iya pak?
+$Pak Hari | Loh? Masnya kenapa kok pucat gitu?
+$Mas Adi | ngga papa pak, saya salah makan kayaknya.
+$Pak Hari | waduh.. Tapi beneren gapapa mas?
+$Mas Adi | I-iya pak, gimana pak ada yang bisa dibantu?
+$Pak Hari | maaf banget mas, saya ngga tau saya lagi kenapa tapi saya ketinggalan berkas lagi. Boleh tolong ngga ya mas? Saya ngga bisa ambil sendiri soalnya bakal ada tamu datang kekantor.
+$Mas Adi | oh, berkas lagi pak. Di rumah pak?
+$Pak Hari | betul mas dirumah. Dikamar saya seperti biasa. Tolong ya mas.
+$Mas Adi | baik pak, saya segera kesana.

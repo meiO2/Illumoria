@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://3mvep2ed0kbm" path="res://Assets/Area/Background - placeholder.png" id="4_18otc"]
 [ext_resource type="PackedScene" uid="uid://bqk4eoe54tl3r" path="res://Assets/Character/Pak-Hari/pak_hari.tscn" id="5_oohxi"]
 
-[node name="Beggining" type="Node2D" node_paths=PackedStringArray("dialog_manager")]
+[node name="main" type="Node2D" node_paths=PackedStringArray("dialog_manager")]
 script = ExtResource("1_rxmpl")
 dialog_manager = NodePath("DialogManager")
 

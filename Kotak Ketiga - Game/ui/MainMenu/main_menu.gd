@@ -24,3 +24,7 @@ func _on_buttonclosepanel_pressed() -> void:
 
 func _on_exitbutton_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_buttonstart_pressed() -> void:
+	get_tree().change_scene_to_file("res://Main-Game/Cutscene/Opening/Cutscene-Opening.tscn")

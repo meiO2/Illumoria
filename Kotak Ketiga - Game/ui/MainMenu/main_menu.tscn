@@ -105,7 +105,6 @@ stream = ExtResource("3_5de1l")
 autoplay = true
 
 [node name="optionspanel" type="Panel" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -205,7 +204,7 @@ offset_left = 324.0
 offset_top = 153.5
 offset_right = 461.0
 offset_bottom = 192.5
-text = "(language)"
+text = "English"
 
 [node name="Button2" type="Button" parent="optionspanel"]
 layout_mode = 0
@@ -242,6 +241,7 @@ theme_override_font_sizes/font_size = 60
 text = "Kotak Ketiga"
 uppercase = true
 
+[connection signal="pressed" from="buttonstart" to="." method="_on_buttonstart_pressed"]
 [connection signal="pressed" from="buttonoption" to="." method="_on_buttonoption_pressed"]
 [connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonoption_pressed"]
 [connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonclosepanel_pressed"]

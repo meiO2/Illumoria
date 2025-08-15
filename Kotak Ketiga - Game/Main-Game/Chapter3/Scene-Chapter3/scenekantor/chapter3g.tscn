@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://f67r5lessgg5"]
+
+[ext_resource type="Script" uid="uid://dxp4kkxbqjlfj" path="res://Main-Game/Chapter3/Script-Chapter3/main_3g.gd" id="1_66hq2"]
+[ext_resource type="Script" uid="uid://dtu2nmnxtyfj1" path="res://System/dialog_script.gd" id="2_6220x"]
+[ext_resource type="PackedScene" uid="uid://5n0kel01sev3" path="res://ui/Dialogbox/dialog_box.tscn" id="3_jsgbu"]
+[ext_resource type="Texture2D" uid="uid://3mvep2ed0kbm" path="res://Assets/Area/Background - placeholder.png" id="4_2tp0e"]
+[ext_resource type="PackedScene" uid="uid://bqk4eoe54tl3r" path="res://Assets/Character/Pak-Hari/pak_hari.tscn" id="5_6gs6c"]
+
+[node name="main" type="Node2D" node_paths=PackedStringArray("dialog_manager")]
+script = ExtResource("1_66hq2")
+dialog_manager = NodePath("DialogManager")
+
+[node name="DialogManager" type="Node2D" parent="."]
+script = ExtResource("2_6220x")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="DialogManager"]
+
+[node name="DialogBox" parent="DialogManager/CanvasLayer" instance=ExtResource("3_jsgbu")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_2tp0e")
+
+[node name="Pak Hari" parent="." instance=ExtResource("5_6gs6c")]
+visible = false
+position = Vector2(1491, 47)

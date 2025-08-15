@@ -14,3 +14,4 @@ func _ready():
 func _on_all_dialog_finished():
 	print("Semua dialog selesai! Saatnya pindah scene.")
 	get_tree().change_scene_to_file("res://Main-Game/Chapter3/Scene-Chapter3/scenekantor/chapter3b.tscn") #gantiscene
+ 

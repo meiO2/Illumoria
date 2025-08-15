@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dtu2nmnxtyfj1" path="res://System/dialog_script.gd" id="2_qd6vc"]
 [ext_resource type="PackedScene" uid="uid://5n0kel01sev3" path="res://ui/Dialogbox/dialog_box.tscn" id="5_xwige"]
 
-[node name="Beggining" type="Node2D" node_paths=PackedStringArray("dialog_manager")]
+[node name="main" type="Node2D" node_paths=PackedStringArray("dialog_manager")]
 script = ExtResource("1_4pbsq")
 dialog_manager = NodePath("DialogManager")
 
