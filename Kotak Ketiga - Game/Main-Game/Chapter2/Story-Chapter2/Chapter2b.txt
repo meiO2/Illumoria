@@ -12,5 +12,5 @@ $Pak Dewa | Saya bilang saya sudah bayar semua! Bilang ke Hari, mau dia terror s
 #3
 Pak! Pak Dewa!? Pak! % Pak tolong buka pak! Pak Dewa?
 $Mas Adi | (...)
-$Mas Adi | (Bukti? Tuntut? Maksudnya?Pak Dewa ini siapa...)
+$Mas Adi | (Bukti? Tuntut? Maksudnya? Pak Dewa ini siapa...)
 $Mas Adi | (Ah.. udah jam segini. Istirahat dulu deh baru ke rumah Mba Berlina...)

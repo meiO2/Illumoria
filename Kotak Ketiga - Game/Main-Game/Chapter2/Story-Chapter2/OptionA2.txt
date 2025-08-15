@@ -1,2 +1,2 @@
 $Mas Adi | Katanya Mba Berlina baru bisa pas siang, gimana ya..
-Pergi aja - Ke rumah Bu sinta dulu
+Pergi aja % Ke rumah Bu sinta dulu -> res://Main-Game/Chapter2/Story-Chapter2/OptionA1.txt

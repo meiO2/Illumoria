@@ -2,7 +2,7 @@ $Mas Adi | (ini.. Rumahnya serius disini?)
 $Mas Saleh | Mas! 
 $Mas Adi | eh? Mas?
 $Mas Saleh | Ahaha! Pas banget mas saya baru pulang sekolah. Mau Survey ya mas?
-Betul mas. Masnya masih ingat saya ya, haha! - Iya mas. Rumahnya masih jauh mas?
+@rumahmassaleh : Betul mas. Masnya masih ingat saya ya, haha! -> res://Main-Game/Chapter2/Story-Chapter2/OptionD1.txt % Iya mas. Rumahnya masih jauh mas? -> res://Main-Game/Chapter2/Story-Chapter2/OptionD2.txt
 #1
 $Mas Saleh | Ini mas Rumah saya, maaf ya mas agak susah dicari. 
 $Mas Adi | Ah iya mas...
@@ -48,7 +48,7 @@ $Mas Adi | Mas, saya-
 $Mas Saleh | Saya paham mas kalau ini mungkin agak sulit di lakukan sama masnya. Saya paham masnya juga hanya pekerja biasa. Tapi mohon mas, saya mohon banget. Uangnya mau saya pakai untuk sekolah 3 tahun kedepan mas.
 $Mas Saleh | Tolong ya mas? Masnya mau bantu kami kan?
 $Mas Adi | (...)
-Saya usahakan ya mas % Maaf mas, saya tidak bisa.
+@pilihanmembantu : Saya usahakan ya mas -> res://Main-Game/Chapter2/Story-Chapter2/OptionD3.txt % Maaf mas, saya tidak bisa. -> res://Main-Game/Chapter2/Story-Chapter2/OptionD4.txt
 $Mas Adi | (...)
 $Mas Adi | (Pak Hari..)
 $Mas Adi | (Aduh, aku mulai mikir aneh-aneh...)

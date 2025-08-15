@@ -1,2 +1,2 @@
 $Mas Adi | Tapi masih pagi, Mas Saleh ngga ada dirumah gimana ya..
-Pergi aja - Ke rumah Mba Berlina
+Pergi aja % Ke rumah Mba Berlina -> res://Main-Game/Chapter2/Story-Chapter2/OptionA2.txt
