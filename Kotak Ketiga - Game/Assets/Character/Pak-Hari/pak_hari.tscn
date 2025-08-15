@@ -2,22 +2,22 @@
 
 [ext_resource type="Script" uid="uid://d25j24w7h03i1" path="res://System/npc-movement-in.gd" id="1_d3r5h"]
 [ext_resource type="Script" uid="uid://cpwdfl2rmawr5" path="res://Assets/Character/Pak-Hari/PakHari.gd" id="1_pxrld"]
-[ext_resource type="Texture2D" uid="uid://dr8fx4rj44eif" path="res://Assets/Character/Pak-Hari/PakHari-Assets/PakHari-Normal-placeholder.png" id="2_h4r6y"]
-[ext_resource type="Texture2D" uid="uid://dxf2l60gg8me7" path="res://Assets/Character/Pak-Hari/PakHari-Assets/PakHari-Blink-placeholder.png" id="3_lr3y4"]
-[ext_resource type="Texture2D" uid="uid://dhruai7jg4xvp" path="res://Assets/Character/Pak-Hari/PakHari-Assets/PakHari-SLeft-placeholder.png" id="4_jkap8"]
-[ext_resource type="Texture2D" uid="uid://cjimy3cnlp6m" path="res://Assets/Character/Pak-Hari/PakHari-Assets/PakHari-SRight-placeholder.png" id="5_5773c"]
+[ext_resource type="Texture2D" uid="uid://c4dynf7nhg4qy" path="res://Assets/Character/Pak-Hari/PakHari-Assets/Pak Hari - diem.png" id="4_2bw0k"]
+[ext_resource type="Texture2D" uid="uid://d2wiun4an87gk" path="res://Assets/Character/Pak-Hari/PakHari-Assets/Pak Hari - lirik kiri.png" id="4_d3r5h"]
+[ext_resource type="Texture2D" uid="uid://c7jygw4308oy8" path="res://Assets/Character/Pak-Hari/PakHari-Assets/Pak Hari - lirik kanan.png" id="5_mskln"]
+[ext_resource type="Texture2D" uid="uid://dxt53da5psvkx" path="res://Assets/Character/Pak-Hari/PakHari-Assets/Pak Hari - merem diem.png" id="5_r6nlm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1i2n4"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_h4r6y")
+"texture": ExtResource("4_2bw0k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_lr3y4")
+"texture": ExtResource("5_r6nlm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_h4r6y")
+"texture": ExtResource("4_2bw0k")
 }],
 "loop": false,
 "name": &"Blink",
@@ -25,19 +25,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_h4r6y")
+"texture": ExtResource("4_2bw0k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_jkap8")
+"texture": ExtResource("4_d3r5h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_h4r6y")
+"texture": ExtResource("4_2bw0k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_5773c")
+"texture": ExtResource("5_mskln")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_h4r6y")
+"texture": ExtResource("4_2bw0k")
 }],
 "loop": false,
 "name": &"Look_Around",
@@ -48,8 +48,8 @@ animations = [{
 script = ExtResource("1_d3r5h")
 
 [node name="Pak-Hari" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -40)
-scale = Vector2(0.690519, 0.690519)
+position = Vector2(-2, -102)
+scale = Vector2(0.260755, 0.260755)
 sprite_frames = SubResource("SpriteFrames_1i2n4")
 animation = &"Look_Around"
 script = ExtResource("1_pxrld")

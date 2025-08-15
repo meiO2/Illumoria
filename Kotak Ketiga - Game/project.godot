@@ -20,6 +20,8 @@ config/icon="res://icon.svg"
 MusicRun="*res://System/MusicRun.gd"
 MusicOffice="*res://System/music_office.tscn"
 Musictoplay="*res://System/musictoplay.gd"
+ClipboardSinta="*res://Assets/Object/ClipBoard/Clipboard-BuSinta.tscn"
+Global="*res://System/Global.gd"
 
 [display]
 

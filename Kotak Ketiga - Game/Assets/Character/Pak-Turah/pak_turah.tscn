@@ -1,22 +1,22 @@
 [gd_scene load_steps=7 format=3 uid="uid://bbimq3jukxayt"]
 
-[ext_resource type="Texture2D" uid="uid://bhpl8jlq34wd4" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/PakTurah-Normal-placeholder.png" id="1_umtmx"]
-[ext_resource type="Texture2D" uid="uid://co4rv7l7kqbbg" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/PakTurah-Blink-placeholder.png" id="2_kr8jt"]
-[ext_resource type="Texture2D" uid="uid://uqa2l15w4gly" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/PakTurah-SRight-placeholder.png" id="3_o584y"]
-[ext_resource type="Texture2D" uid="uid://oe4ojv65wgl0" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/PakTurah-SLeft-placeholder.png" id="4_nlj3a"]
+[ext_resource type="Texture2D" uid="uid://dyes8ojcjs8q7" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/Pak Turah - diem.png" id="1_anpbe"]
+[ext_resource type="Texture2D" uid="uid://homawiwldah6" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/Pak Turah - merem.png" id="2_mxvmy"]
+[ext_resource type="Texture2D" uid="uid://cxkk3chdoc8n6" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/Pak Turah - lirik kanan.png" id="3_hg5dl"]
+[ext_resource type="Texture2D" uid="uid://dcl5siw0l43xk" path="res://Assets/Character/Pak-Turah/PakTurah-Assets/Pak Turah - lirik kiri.png" id="4_anpbe"]
 [ext_resource type="Script" uid="uid://c8822o6uq35pl" path="res://Assets/Character/Pak-Turah/PakTurah.gd" id="5_kr8jt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tldyu"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_umtmx")
+"texture": ExtResource("1_anpbe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_kr8jt")
+"texture": ExtResource("2_mxvmy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_umtmx")
+"texture": ExtResource("1_anpbe")
 }],
 "loop": false,
 "name": &"Blink",
@@ -24,19 +24,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_umtmx")
+"texture": ExtResource("1_anpbe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_o584y")
+"texture": ExtResource("3_hg5dl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_umtmx")
+"texture": ExtResource("1_anpbe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_nlj3a")
+"texture": ExtResource("4_anpbe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_umtmx")
+"texture": ExtResource("1_anpbe")
 }],
 "loop": false,
 "name": &"Look_Around",
@@ -46,10 +46,10 @@ animations = [{
 [node name="PakTurah" type="Node2D"]
 
 [node name="Pak-Turah" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -41.3857)
-scale = Vector2(0.690476, 0.690476)
+position = Vector2(-2, -108.386)
+scale = Vector2(0.262209, 0.262209)
 sprite_frames = SubResource("SpriteFrames_tldyu")
-animation = &"Blink"
+animation = &"Look_Around"
 script = ExtResource("5_kr8jt")
 
 [node name="Timer" type="Timer" parent="."]

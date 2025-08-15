@@ -75,6 +75,9 @@ func _input(event):
 	or (event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT):
 		current_index += 1
 		show_entry(current_index)
+		
+	elif event is InputEventKey and event.pressed and event.keycode == KEY_S: 
+		get_tree().change_scene_to_file("res://Main-Game/Chapter1/Scene-Chapter1/PathKantor/Meja.tscn")
 
 func _on_Option1_pressed():
 	waiting_for_choice = false
