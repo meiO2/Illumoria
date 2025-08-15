@@ -1,2 +1,2 @@
-(hm.. Ini bukan kamar Pak Hari.)
-(Ini, kayaknya bukan jalan ke kamar Pak Hari.)
+$Mas Adi | (hm.. Ini bukan kamar Pak Hari.)
+$Mas Adi | (Ini, kayaknya bukan jalan ke kamar Pak Hari.)
