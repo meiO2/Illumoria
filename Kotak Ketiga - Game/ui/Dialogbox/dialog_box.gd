@@ -32,6 +32,7 @@ func show_dialog(character_name, text):
 	timer.wait_time = typing_speed
 	timer.start()
 
+
 func show_choices(options_array):
 	hide_all()
 

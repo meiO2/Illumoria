@@ -22,6 +22,7 @@ MusicOffice="*res://System/music_office.tscn"
 Musictoplay="*res://System/musictoplay.gd"
 ClipboardSinta="*res://Assets/Object/ClipBoard/Clipboard-BuSinta.tscn"
 Global="*res://System/Global.gd"
+RunClipSinta="*res://Assets/Object/ClipBoard/RunClipSinta.gd"
 
 [display]
 

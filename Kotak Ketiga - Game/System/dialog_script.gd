@@ -7,6 +7,10 @@ var entries = []
 var current_path = ""
 var current_index = 0 
 var can_advance = false
+var Line = []
+
+var check = false
+var count = 0
 
 var story_stack = []
 var visited_choices = {}
@@ -31,13 +35,14 @@ func start_dialog_from_file(path: String):
 	load_and_show(path)
 
 func load_and_show(path):
-	# (Sisa skrip Anda tidak perlu diubah sama sekali)
 	current_path = path
 	load_entries(path)
 	show_entry(0)
 
 func load_entries(path):
 	entries.clear()
+	Line.clear()
+	count += 1
 	var file = FileAccess.open(path, FileAccess.READ)
 	if not file:
 		print("ERROR: Gagal membuka file cerita di path: ", path)
@@ -45,7 +50,8 @@ func load_entries(path):
 
 	while not file.eof_reached():
 		var line = file.get_line().strip_edges()
-		if line == "" or line.begins_with("#"): continue
+		if line == "" or line.begins_with("#"):
+			Line.append(line)
 
 		if line.begins_with("$"):
 			var detail = line.trim_prefix("$").strip_edges().split("|", false, 2)
@@ -82,7 +88,7 @@ func load_entries(path):
 
 func show_entry(index):
 	current_index = index
-	
+	check = false
 	if current_index >= entries.size():
 		if not story_stack.is_empty():
 			var return_state = story_stack.pop_back()
@@ -96,6 +102,7 @@ func show_entry(index):
 	var entry = entries[current_index]
 
 	if entry["type"] == "dialog":
+		check = true
 		dialog_box.show_dialog(entry["name"], entry["text"])
 
 	elif entry["type"] == "choice":
@@ -103,6 +110,7 @@ func show_entry(index):
 		var original_indices = []
 		
 		if entry.id != "" and entry.id in visited_choices:
+			check = false
 			var visited_indices = visited_choices[entry.id]
 			if visited_indices.size() == entry.options.size():
 				show_entry(current_index + 1)
@@ -119,9 +127,11 @@ func show_entry(index):
 		
 		entry["original_indices"] = original_indices
 		dialog_box.show_choices(texts_for_buttons)
+		
 
 func _on_dialog_finished():
 	can_advance = true
+	check = false
 
 func _on_choice_made(filtered_index):
 	var entry = entries[current_index]
