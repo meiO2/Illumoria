@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cmuf0dxelwv54"]
+[gd_scene load_steps=16 format=3 uid="uid://cmuf0dxelwv54"]
 
 [ext_resource type="Script" uid="uid://4abh80odho26" path="res://ui/MainMenu/main_menu.gd" id="1_nhkf3"]
-[ext_resource type="Texture2D" uid="uid://ks1acuufb8mc" path="res://Assets/Object/settings icon.png" id="2_3w4mj"]
 [ext_resource type="Texture2D" uid="uid://ljgxetrci2n1" path="res://Assets/Area/MAIN MENU.png" id="2_4si7q"]
 [ext_resource type="AudioStream" uid="uid://lvu530xyijv2" path="res://Assets/Music/Comfort in the dark.mp3" id="3_5de1l"]
+[ext_resource type="Texture2D" uid="uid://c14rpbwcd7tkv" path="res://Assets/Object/setting icon.png" id="4_8hjxc"]
 [ext_resource type="Script" uid="uid://bdeh7yhc1gt3x" path="res://ui/MainMenu/audio.gd" id="4_ajn5b"]
+[ext_resource type="Texture2D" uid="uid://cxuxfw57yidm4" path="res://Assets/Object/image 15.png" id="6_5th28"]
 [ext_resource type="FontFile" uid="uid://bta7woge0o2k0" path="res://Assets/Font/OldNewspaperTypes.ttf" id="6_8hjxc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3w4mj"]
@@ -27,6 +28,14 @@ corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajn5b"]
 bg_color = Color(0.211765, 0.129412, 0.054902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxbwa"]
+bg_color = Color(0.678431, 0.678431, 0.678431, 0.717647)
+shadow_color = Color(1, 1, 1, 0.580392)
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_stv1f"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_nhkf3"]
 color = Color(1, 1, 1, 1)
@@ -96,15 +105,16 @@ text = "
 "
 
 [node name="buttonoption2" type="Sprite2D" parent="buttonoption"]
-position = Vector2(10, 45)
-scale = Vector2(0.0976563, 0.0976563)
-texture = ExtResource("2_3w4mj")
+position = Vector2(21.6993, 33.3007)
+scale = Vector2(0.166475, 0.166475)
+texture = ExtResource("4_8hjxc")
 
 [node name="ComfortInTheDark" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_5de1l")
 autoplay = true
 
 [node name="optionspanel" type="Panel" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -149,45 +159,52 @@ theme_override_constants/separation = 16
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_8hjxc")
 theme_override_font_sizes/font_size = 24
-text = "Sound"
+text = "Suara"
 
 [node name="Label5" type="Label" parent="optionspanel/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_8hjxc")
 theme_override_font_sizes/font_size = 24
-text = "Language"
+text = "Bahasa"
 
 [node name="Label3" type="Label" parent="optionspanel/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_8hjxc")
 theme_override_font_sizes/font_size = 24
-text = "Help"
+text = "Bantuan"
 
 [node name="Label4" type="Label" parent="optionspanel/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_8hjxc")
 theme_override_font_sizes/font_size = 24
-text = "Game Control"
+text = "Kontrol Permainan"
 
 [node name="buttonclosepanel" type="Button" parent="optionspanel"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -88.0
-offset_top = 14.0
-offset_right = -13.0
-offset_bottom = 45.0
+offset_left = -55.0
+offset_top = 16.0
+offset_right = -17.0
+offset_bottom = 53.0
 grow_horizontal = 0
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
-text = "close
+theme_override_styles/hover = SubResource("StyleBoxFlat_fxbwa")
+theme_override_styles/normal = SubResource("StyleBoxFlat_stv1f")
+text = "
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="optionspanel/buttonclosepanel"]
+position = Vector2(19, 18.5)
+scale = Vector2(0.0882009, 0.0882009)
+texture = ExtResource("6_5th28")
 
 [node name="audio" type="HSlider" parent="optionspanel"]
 layout_mode = 0
-offset_left = 258.0
+offset_left = 284.0
 offset_top = 96.5
-offset_right = 534.0
+offset_right = 560.0
 offset_bottom = 161.5
 theme_override_styles/slider = SubResource("StyleBoxLine_nhkf3")
 theme_override_styles/grabber_area = SubResource("StyleBoxLine_3w4mj")
@@ -200,25 +217,25 @@ audio_bus_name = "Master"
 
 [node name="Button" type="Button" parent="optionspanel"]
 layout_mode = 0
-offset_left = 324.0
+offset_left = 350.0
 offset_top = 153.5
-offset_right = 461.0
+offset_right = 487.0
 offset_bottom = 192.5
-text = "English"
+text = "Indonesia"
 
 [node name="Button2" type="Button" parent="optionspanel"]
 layout_mode = 0
-offset_left = 326.0
+offset_left = 350.0
 offset_top = 203.5
-offset_right = 463.0
+offset_right = 487.0
 offset_bottom = 242.5
 text = "(help button)"
 
 [node name="Button3" type="Button" parent="optionspanel"]
 layout_mode = 0
-offset_left = 326.0
+offset_left = 344.0
 offset_top = 258.5
-offset_right = 463.0
+offset_right = 492.0
 offset_bottom = 297.5
 text = "(set game control)"
 
@@ -233,9 +250,9 @@ text = "exit game"
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
 offset_left = 36.0
-offset_top = 60.0
+offset_top = 38.0
 offset_right = 532.0
-offset_bottom = 135.0
+offset_bottom = 113.0
 theme_override_fonts/font = ExtResource("6_8hjxc")
 theme_override_font_sizes/font_size = 60
 text = "Kotak Ketiga"
@@ -243,7 +260,7 @@ uppercase = true
 
 [connection signal="pressed" from="buttonstart" to="." method="_on_buttonstart_pressed"]
 [connection signal="pressed" from="buttonoption" to="." method="_on_buttonoption_pressed"]
-[connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonoption_pressed"]
 [connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonclosepanel_pressed"]
+[connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonoption_pressed"]
 [connection signal="value_changed" from="optionspanel/audio" to="." method="_on_audio_value_changed"]
 [connection signal="pressed" from="optionspanel/exitbutton" to="." method="_on_exitbutton_pressed"]
