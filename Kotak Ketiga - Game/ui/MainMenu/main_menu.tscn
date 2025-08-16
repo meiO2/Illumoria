@@ -37,6 +37,10 @@ shadow_size = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajn5b"]
 bg_color = Color(0.211765, 0.129412, 0.054902, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j4qb0"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
