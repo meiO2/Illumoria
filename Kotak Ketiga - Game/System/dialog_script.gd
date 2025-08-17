@@ -2,12 +2,13 @@ extends Node
 @onready var dialog_box = $CanvasLayer/DialogBox
 
 signal all_dialog_finished
+signal command_triggered(command_text) # <-- SINYAL BARU
 
-var entries = [] 
+var entries = []
 var current_path = ""
-var current_index = 0 
+var current_index = 0
 var can_advance = false
-var Line = []
+# var Line = [] <-- TIDAK DIPERLUKAN LAGI
 
 var check = false
 var count = 0
@@ -41,7 +42,7 @@ func load_and_show(path):
 
 func load_entries(path):
 	entries.clear()
-	Line.clear()
+	# Line.clear() <-- TIDAK DIPERLUKAN LAGI
 	count += 1
 	var file = FileAccess.open(path, FileAccess.READ)
 	if not file:
@@ -50,14 +51,16 @@ func load_entries(path):
 
 	while not file.eof_reached():
 		var line = file.get_line().strip_edges()
-		if line == "" or line.begins_with("#"):
-			Line.append(line)
+		if line == "": continue # Abaikan baris kosong
 
 		if line.begins_with("$"):
 			var detail = line.trim_prefix("$").strip_edges().split("|", false, 2)
 			if detail.size() < 2: continue
 			entries.append({"type": "dialog", "name": detail[0].strip_edges(), "text": detail[1].strip_edges()})
 		
+		elif line.begins_with("#"): # <-- LOGIKA BARU UNTUK PERINTAH
+			entries.append({"type": "command", "command": line})
+
 		elif "%" in line or "&" in line or line.begins_with("@"):
 			var choice_id = ""
 			
@@ -69,7 +72,6 @@ func load_entries(path):
 
 			var separator = "%" if "%" in line else "&"
 			var parts = line.split(separator)
-
 			var choice_options = []
 			
 			for part in parts:
@@ -105,6 +107,10 @@ func show_entry(index):
 		check = true
 		dialog_box.show_dialog(entry["name"], entry["text"])
 
+	elif entry["type"] == "command": # <-- LOGIKA BARU UNTUK MENANGANI PERINTAH
+		emit_signal("command_triggered", entry["command"])
+		show_entry(current_index + 1) # Langsung lanjut ke baris berikutnya
+
 	elif entry["type"] == "choice":
 		var texts_for_buttons = []
 		var original_indices = []
@@ -128,24 +134,20 @@ func show_entry(index):
 		entry["original_indices"] = original_indices
 		dialog_box.show_choices(texts_for_buttons)
 		
-
 func _on_dialog_finished():
 	can_advance = true
 	check = false
 
 func _on_choice_made(filtered_index):
+	# ... (fungsi ini tidak perlu diubah)
 	var entry = entries[current_index]
-	
 	var original_index = entry.original_indices[filtered_index]
 	var chosen_option = entry.options[original_index]
-	
 	if entry.id != "":
 		if not entry.id in visited_choices:
 			visited_choices[entry.id] = []
 		visited_choices[entry.id].append(original_index)
-		
 		story_stack.push_back({"path": current_path, "index": current_index})
-	
 	match chosen_option.action:
 		"load_file":
 			load_and_show(chosen_option.path)

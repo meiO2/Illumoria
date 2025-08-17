@@ -256,7 +256,7 @@ uppercase = true
 
 [connection signal="pressed" from="buttonstart" to="." method="_on_buttonstart_pressed"]
 [connection signal="pressed" from="buttonoption" to="." method="_on_buttonoption_pressed"]
-[connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonclosepanel_pressed"]
 [connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonoption_pressed"]
+[connection signal="pressed" from="optionspanel/buttonclosepanel" to="." method="_on_buttonclosepanel_pressed"]
 [connection signal="value_changed" from="optionspanel/audio" to="." method="_on_audio_value_changed"]
 [connection signal="pressed" from="optionspanel/exitbutton" to="." method="_on_exitbutton_pressed"]
