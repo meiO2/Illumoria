@@ -153,5 +153,5 @@ text = "Membuka Usaha"
 [connection signal="pressed" from="Sprite2D2/Jangka Waktu" to="." method="_on_jangka_waktu_pressed"]
 [connection signal="pressed" from="Sprite2D2/Keperluan" to="." method="_on_keperluan_pressed"]
 [connection signal="pressed" from="Sprite2D2/Catatan" to="." method="_on_catatan_pressed"]
-[connection signal="pressed" from="Sprite2D2/Pekerjaan" to="." method="_on_catatan_pressed"]
 [connection signal="pressed" from="Sprite2D2/Pekerjaan" to="." method="_on_pekerjaan_pressed"]
+[connection signal="pressed" from="Sprite2D2/Pekerjaan" to="." method="_on_catatan_pressed"]

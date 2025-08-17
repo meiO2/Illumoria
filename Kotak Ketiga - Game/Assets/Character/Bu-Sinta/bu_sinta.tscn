@@ -1,22 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://ungfhmw7fwhh"]
+[gd_scene load_steps=8 format=3 uid="uid://ungfhmw7fwhh"]
 
-[ext_resource type="Texture2D" uid="uid://cgg2m8r7w6jqr" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/BuSinta-Normal-placeholder.png" id="1_5ndly"]
 [ext_resource type="Script" uid="uid://cpx5wuxl8juui" path="res://Assets/Character/Bu-Sinta/BuSinta.gd" id="1_6xg7x"]
-[ext_resource type="Texture2D" uid="uid://b2fqq7pk43w4b" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/BuSinta-Blink-placeholder.png" id="2_atlvd"]
-[ext_resource type="Texture2D" uid="uid://d1pdgqbgooqbu" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/BuSinta-SLeft-placeholder.png" id="3_gj3v8"]
-[ext_resource type="Texture2D" uid="uid://cugjm7q6gc4nv" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/BuSinta-SRight-placeholder.png" id="4_5e6np"]
+[ext_resource type="Texture2D" uid="uid://d0ijrlrqm0jql" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/Bu Sinta - diem_.png" id="1_yiqk0"]
+[ext_resource type="Texture2D" uid="uid://5lg8wn3bwbca" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/Bu Sinta - merem diem_.png" id="2_vksvu"]
+[ext_resource type="Texture2D" uid="uid://dt35sspucj5j0" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/Bu Sinta - lirik kiri.png" id="3_yiqk0"]
+[ext_resource type="Texture2D" uid="uid://ds8kn74oe8xg2" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/Bu Sinta - lirik kanan.png" id="4_vksvu"]
+[ext_resource type="Texture2D" uid="uid://cxs318mcga6hi" path="res://Assets/Character/Bu-Sinta/BuSinta-Assets/Bu Sinta - ngomong senyum.png" id="5_c0pec"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ebspj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_5ndly")
+"texture": ExtResource("1_yiqk0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_atlvd")
+"texture": ExtResource("2_vksvu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_5ndly")
+"texture": ExtResource("1_yiqk0")
 }],
 "loop": false,
 "name": &"Blink",
@@ -24,32 +25,43 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_5ndly")
+"texture": ExtResource("1_yiqk0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_gj3v8")
+"texture": ExtResource("3_yiqk0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_5ndly")
+"texture": ExtResource("1_yiqk0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_5e6np")
+"texture": ExtResource("4_vksvu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_5ndly")
+"texture": ExtResource("1_yiqk0")
 }],
 "loop": false,
 "name": &"Look_Around",
 "speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_c0pec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_yiqk0")
+}],
+"loop": false,
+"name": &"Talk",
+"speed": 0.5
 }]
 
 [node name="BuSinta" type="Node2D"]
 
 [node name="Bu-Sinta" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -40.5524)
-scale = Vector2(0.690476, 0.690476)
+position = Vector2(0, -138)
+scale = Vector2(0.295, 0.295)
 sprite_frames = SubResource("SpriteFrames_ebspj")
-animation = &"Look_Around"
+animation = &"Talk"
 script = ExtResource("1_6xg7x")
 
 [node name="Timer" type="Timer" parent="."]

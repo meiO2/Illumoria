@@ -4,7 +4,7 @@ Pagi Pak. Unit peminjaman pak? % Hah? Unit peminjaman pak?
 $Pak Hari | Iya, pekerjaan kamu gampang kok. 
 $Pak Hari | Kalau ada orang datang mau meminjam uang, cek saja berkas mereka. 
 $Pak Hari | KTP, Slip Gaji, Buku Tabungan, oh jangan lupa Kartu Keluarga dan surat jaminan juga ya. 
-*1Pak Hari | Semuanya ada di kertas ini kok, kalau lupa dibaca saja.
+$Pak Hari | Semuanya ada di kertas ini kok, kalau lupa dibaca saja.
 #1
 $Pak Hari | Oh ya, selain berkas tanyakan juga dengan detail mereka butuh uang tersebut untuk apa.
 $Pak Hari | jangan langsung diberikan begitu saja! Kalau bisa, periksa langsung ke rumah mereka biar lebih yakin.

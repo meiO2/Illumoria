@@ -13,4 +13,5 @@ stream = ExtResource("2_y27r1")
 volume_db = -5.0
 
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
 [connection signal="finished" from="AudioStreamPlayer" to="Timer" method="_on_audio_stream_player_finished"]

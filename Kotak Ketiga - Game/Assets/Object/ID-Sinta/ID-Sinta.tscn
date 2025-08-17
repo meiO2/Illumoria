@@ -1,25 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2r7mnn55aiy3"]
+[gd_scene load_steps=3 format=3 uid="uid://c2r7mnn55aiy3"]
 
 [ext_resource type="Texture2D" uid="uid://n5wrte8haekr" path="res://Assets/Object/ID-Sinta/ID-Sinta.png" id="1_4kc7y"]
 [ext_resource type="Script" uid="uid://s286l7qn03se" path="res://Assets/Object/ID-Sinta/KlikBerkas.gd" id="1_8tosi"]
-[ext_resource type="Texture2D" uid="uid://2la3ldq0kgs2" path="res://Assets/Object/Close-button.png" id="3_4h0ao"]
 
 [node name="Id-sinta" type="Node2D"]
 script = ExtResource("1_8tosi")
 
-[node name="ID-Koperasi" type="Sprite2D" parent="."]
+[node name="item" type="Sprite2D" parent="."]
 position = Vector2(-118, -49)
 scale = Vector2(0.108674, 0.108674)
 texture = ExtResource("1_4kc7y")
 
-[node name="Button" type="Button" parent="ID-Koperasi"]
+[node name="Button" type="Button" parent="item"]
 modulate = Color(1, 1, 1, 0)
 offset_left = -469.0
 offset_top = -258.0
 offset_right = 478.0
 offset_bottom = 258.0
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="."]
 
@@ -36,18 +33,4 @@ position = Vector2(579, 325)
 scale = Vector2(0.597481, 0.597481)
 texture = ExtResource("1_4kc7y")
 
-[node name="Out" type="Sprite2D" parent="CanvasLayer3"]
-position = Vector2(42, 40)
-scale = Vector2(0.0703125, 0.0703125)
-texture = ExtResource("3_4h0ao")
-
-[node name="Out" type="Button" parent="CanvasLayer3/Out"]
-modulate = Color(1, 1, 1, 0)
-offset_left = -171.0
-offset_top = -171.0
-offset_right = 171.0
-offset_bottom = 171.0
-metadata/_edit_use_anchors_ = true
-
-[connection signal="pressed" from="ID-Koperasi/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="CanvasLayer3/Out/Out" to="." method="_on_out_pressed"]
+[connection signal="pressed" from="item/Button" to="." method="_on_button_pressed"]

@@ -2,13 +2,12 @@ extends Node
 @onready var dialog_box = $CanvasLayer/DialogBox
 
 signal all_dialog_finished
-signal command_triggered(command_text) # <-- SINYAL BARU
+signal command_triggered(command_text)
 
 var entries = []
 var current_path = ""
 var current_index = 0
 var can_advance = false
-# var Line = [] <-- TIDAK DIPERLUKAN LAGI
 
 var check = false
 var count = 0
@@ -42,7 +41,6 @@ func load_and_show(path):
 
 func load_entries(path):
 	entries.clear()
-	# Line.clear() <-- TIDAK DIPERLUKAN LAGI
 	count += 1
 	var file = FileAccess.open(path, FileAccess.READ)
 	if not file:
@@ -51,14 +49,14 @@ func load_entries(path):
 
 	while not file.eof_reached():
 		var line = file.get_line().strip_edges()
-		if line == "": continue # Abaikan baris kosong
+		if line == "": continue 
 
 		if line.begins_with("$"):
 			var detail = line.trim_prefix("$").strip_edges().split("|", false, 2)
 			if detail.size() < 2: continue
 			entries.append({"type": "dialog", "name": detail[0].strip_edges(), "text": detail[1].strip_edges()})
 		
-		elif line.begins_with("#"): # <-- LOGIKA BARU UNTUK PERINTAH
+		elif line.begins_with("#"): 
 			entries.append({"type": "command", "command": line})
 
 		elif "%" in line or "&" in line or line.begins_with("@"):
@@ -104,12 +102,15 @@ func show_entry(index):
 	var entry = entries[current_index]
 
 	if entry["type"] == "dialog":
-		check = true
 		dialog_box.show_dialog(entry["name"], entry["text"])
+		if entry["name"] == "Mas Adi":
+			check = false
+		else:
+			check = true
 
-	elif entry["type"] == "command": # <-- LOGIKA BARU UNTUK MENANGANI PERINTAH
+	elif entry["type"] == "command":
 		emit_signal("command_triggered", entry["command"])
-		show_entry(current_index + 1) # Langsung lanjut ke baris berikutnya
+		show_entry(current_index + 1)
 
 	elif entry["type"] == "choice":
 		var texts_for_buttons = []
@@ -139,7 +140,6 @@ func _on_dialog_finished():
 	check = false
 
 func _on_choice_made(filtered_index):
-	# ... (fungsi ini tidak perlu diubah)
 	var entry = entries[current_index]
 	var original_index = entry.original_indices[filtered_index]
 	var chosen_option = entry.options[original_index]

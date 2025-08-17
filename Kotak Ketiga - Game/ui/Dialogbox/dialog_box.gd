@@ -17,7 +17,6 @@ func _ready():
 	hide_all()
 	timer.connect("timeout", _on_timer_timeout)
 
-
 func show_dialog(character_name, text):
 	hide_all()
 	title.text = character_name
@@ -31,7 +30,6 @@ func show_dialog(character_name, text):
 	
 	timer.wait_time = typing_speed
 	timer.start()
-
 
 func show_choices(options_array):
 	hide_all()
