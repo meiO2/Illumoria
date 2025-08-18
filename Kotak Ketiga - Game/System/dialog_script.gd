@@ -23,7 +23,8 @@ func _input(event):
 	if not dialog_box.visible:
 		return
 		
-	if event.is_action_pressed("ui_accept"):
+	if (event.is_action_pressed("ui_accept") 
+		or (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed)):
 		if not dialog_box.timer.is_stopped():
 			dialog_box.complete_typing()
 		elif can_advance:

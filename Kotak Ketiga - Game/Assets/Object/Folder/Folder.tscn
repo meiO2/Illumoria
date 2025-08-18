@@ -16,6 +16,8 @@ script = ExtResource("1_ltw8s")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Buka" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(-279, 6)
+scale = Vector2(0.721128, 0.721128)
 texture = ExtResource("1_xtlkt")
 script = ExtResource("3_6wglv")
 
@@ -31,6 +33,7 @@ offset_left = -343.0
 offset_top = -256.0
 offset_right = 342.0
 offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
 
 [node name="ID CARD2" type="Sprite2D" parent="CanvasLayer/Buka"]
 position = Vector2(266, -148)
@@ -60,6 +63,7 @@ offset_left = -481.0
 offset_top = -255.0
 offset_right = 475.0
 offset_bottom = 257.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Surat Tanah" type="Sprite2D" parent="CanvasLayer/Buka"]
 position = Vector2(184.125, 9.7082)
@@ -72,6 +76,7 @@ offset_left = -187.0
 offset_top = -256.0
 offset_right = 188.0
 offset_bottom = 257.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Pembatas" type="Sprite2D" parent="CanvasLayer/Buka"]
 position = Vector2(322.375, 0.0386856)
@@ -90,8 +95,6 @@ offset_top = -258.0
 offset_right = 185.0
 offset_bottom = 257.0
 metadata/_edit_use_anchors_ = true
-
-[node name="Camera2D" type="Camera2D" parent="CanvasLayer"]
 
 [connection signal="pressed" from="CanvasLayer/Buka/KK/KK" to="." method="_on_kk_pressed"]
 [connection signal="pressed" from="CanvasLayer/Buka/KK/KK" to="CanvasLayer/Buka" method="_on_kk_pressed"]

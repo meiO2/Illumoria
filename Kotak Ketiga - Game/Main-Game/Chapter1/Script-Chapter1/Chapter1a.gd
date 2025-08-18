@@ -6,10 +6,11 @@ extends Node
 @onready var pakhari = $"Pak Hari"
 @onready var BuSintaScene = preload("res://Assets/Character/Bu-Sinta/bu_sinta.tscn")
 @onready var meja_scene = preload("res://Main-Game/Chapter1/Scene-Chapter1/PathKantor/Meja.tscn")
+@onready var folder = $detailmeja
 @onready var meja_container = $detailmeja
-@onready var tutorial_page = $DialogManager/CanvasLayer/Tutorial/CanvasLayer3
-@onready var tutorial_node = $DialogManager/CanvasLayer/Tutorial
-@onready var tutorial_button = $DialogManager/CanvasLayer/Tutorial/item/Button
+@onready var tutorial_page = $"Meja-Kantor-Mas-Adi/Tutorial/CanvasLayer3"
+@onready var tutorial_node = $"Meja-Kantor-Mas-Adi/Tutorial"
+@onready var tutorial_button = $"Meja-Kantor-Mas-Adi/Tutorial/item"
 @onready var foldersinta = $Foldermejadepan
 
 var tween_triggered = false
@@ -23,6 +24,7 @@ var is_waiting_for_tutorial = false
 var meja_instance: Node = null 
 
 func _ready():
+	folder.visible = false
 	foldersinta.visible = false
 	var walk_tween = create_tween()
 	walk_tween.tween_property(pakhari, "position:x", end_pos.x, 3)
@@ -33,12 +35,6 @@ func _ready():
 
 	walk_tween.finished.connect(_on_walk_finished)
 	dialog_manager.command_triggered.connect(_on_dialog_command)
-	
-	if tutorial_button:
-		tutorial_button.pressed.connect(_on_tutorial_button_pressed)
-		tutorial_button.disabled = true
-	else:
-		printerr("ERROR: Node 'tutorial_button' tidak ditemukan.")
 	
 	tutorial_page.visible = false
 
@@ -59,7 +55,7 @@ func _on_dialog_command(command):
 		dialog_box.modulate.a = 0.0
 		
 		tutorial_page.visible = true
-		tutorial_button.disabled = false
+		tutorial_button.visible = false
 		
 		is_waiting_for_tutorial = true
 		print("Tutorial diaktifkan oleh dialog #1")
@@ -81,10 +77,11 @@ func _start_character_swap():
 		bu_sinta_spawned = true
 		dialog_manager.check = false
 		dialog_box.modulate.a = 0.0
-		
+
 		var exit_tween = create_tween()
 		exit_tween.tween_property(pakhari, "position", exit_pos, 3)
 		await exit_tween.finished
+
 		
 		bu_sinta = BuSintaScene.instantiate()
 		get_node("place").add_child(bu_sinta)
@@ -119,14 +116,23 @@ func _on_all_dialog_finished():
 	get_tree().change_scene_to_file("res://Main-Game/Chapter3/Scene-Chapter3/scenekantor/chapter3b.tscn")
 
 func _input(event):
-	if event.is_action_pressed("open_meja"):  # tombol W
-		if meja_instance == null:
-			print("Buka Meja")
-			meja_instance = meja_scene.instantiate()
-			meja_container.add_child(meja_instance)
-
-	elif event.is_action_pressed("close_meja"):  # tombol S
+	if event is InputEventKey and event.pressed and event.keycode == KEY_W:
 		if meja_instance:
 			print("Tutup Meja")
 			meja_instance.queue_free()
 			meja_instance = null
+			folder.visible = false
+
+	if event is InputEventKey and event.pressed and event.keycode == KEY_S:
+		if meja_instance == null:
+			print("Buka Meja")
+			meja_instance = meja_scene.instantiate()
+			meja_container.add_child(meja_instance)
+			folder.visible = true
+			
+	if event is InputEventKey and event.pressed and event.keycode == KEY_F:
+		if meja_instance == null:
+			$Foldermejadepan.visible = false
+			meja_instance = meja_scene.instantiate()
+			meja_container.add_child(meja_instance)
+			folder.visible = true

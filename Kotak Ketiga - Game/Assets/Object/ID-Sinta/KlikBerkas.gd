@@ -4,20 +4,22 @@ extends Node
 @onready var klik = $CanvasLayer3
 
 var pos = true
+var stat = false
 
 func _ready():
 	klik.visible = false
 
 func _input(event):
-	if klik.visible:
-		if event is InputEventMouseButton:
-			if event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
+	if event is InputEventKey and event.pressed and not event.echo:
+		if klik.visible == false:
+			if event.keycode == KEY_T:
+				klik.visible = true
+				item.visible = false
+				pos = false
+				stat = true
+		elif klik.visible == true:
+			if event.keycode == KEY_T:
 				klik.visible = false
 				item.visible = true
-				pos=true
-	if event is InputEventKey:
-		if event.keycode == KEY_T and event.is_pressed():
-			print("Tombol T ditekan!")
-			klik.visible = true
-			item.visible = false
-			pos = false
+				pos = true
+				stat = false
