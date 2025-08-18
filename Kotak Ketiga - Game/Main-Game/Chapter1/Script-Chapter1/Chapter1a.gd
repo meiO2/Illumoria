@@ -5,10 +5,12 @@ extends Node
 @onready var PakHari = $"Pak Hari/Pak-Hari"
 @onready var pakhari = $"Pak Hari"
 @onready var BuSintaScene = preload("res://Assets/Character/Bu-Sinta/bu_sinta.tscn")
-@onready var meja_adi = $"Meja-Kantor-Mas-Adi"
+@onready var meja_scene = preload("res://Main-Game/Chapter1/Scene-Chapter1/PathKantor/Meja.tscn")
+@onready var meja_container = $detailmeja
 @onready var tutorial_page = $DialogManager/CanvasLayer/Tutorial/CanvasLayer3
 @onready var tutorial_node = $DialogManager/CanvasLayer/Tutorial
 @onready var tutorial_button = $DialogManager/CanvasLayer/Tutorial/item/Button
+@onready var foldersinta = $Foldermejadepan
 
 var tween_triggered = false
 var start_pos = Vector2(806, 0)
@@ -18,7 +20,10 @@ var bu_sinta_spawned = false
 var bu_sinta = null
 var is_waiting_for_tutorial = false
 
+var meja_instance: Node = null  # instance meja kalau lagi dibuka
+
 func _ready():
+	foldersinta.visible = false
 	var walk_tween = create_tween()
 	walk_tween.tween_property(pakhari, "position:x", end_pos.x, 3)
 
@@ -64,7 +69,7 @@ func _on_dialog_command(command):
 		_start_character_swap()
 		
 	if command == "#3":
-		pass
+		foldersinta.visible = true
 
 func _on_tutorial_button_pressed():
 	print("Tombol tutorial ditekan.")
@@ -112,3 +117,16 @@ func _on_tutorial_selesai():
 func _on_all_dialog_finished():
 	print("Dialog selesai, lanjut scene berikutnya.")
 	get_tree().change_scene_to_file("res://Main-Game/Chapter3/Scene-Chapter3/scenekantor/chapter3b.tscn")
+
+func _input(event):
+	if event.is_action_pressed("open_meja"):  # tombol W
+		if meja_instance == null:
+			print("Buka Meja")
+			meja_instance = meja_scene.instantiate()
+			meja_container.add_child(meja_instance)
+
+	elif event.is_action_pressed("close_meja"):  # tombol S
+		if meja_instance:
+			print("Tutup Meja")
+			meja_instance.queue_free()
+			meja_instance = null

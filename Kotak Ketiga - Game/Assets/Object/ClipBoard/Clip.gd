@@ -27,8 +27,6 @@ func _input(event):
 		else:
 			clip.position = Vector2(359.0, 27.146)
 		at_first_position = !at_first_position
-	elif event is InputEventKey and event.pressed and event.keycode == KEY_W: 
-		get_tree().change_scene_to_file("res://Main-Game/Chapter1/Scene-Chapter1/PathKantor/Chapter1a.tscn")
 
 func _on_nama_pressed() -> void:
 	nama.visible = true

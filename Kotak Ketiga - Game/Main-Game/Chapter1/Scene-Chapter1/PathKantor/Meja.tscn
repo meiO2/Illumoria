@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bbcovpsdhj2vb"]
 
-[ext_resource type="Texture2D" uid="uid://cvidac0ucbt8w" path="res://Assets/Area/Meja[LEBAR]-placeholder.png" id="1_3qc01"]
+[ext_resource type="Texture2D" uid="uid://86j3j4u4kd3w" path="res://Assets/Area/Meja MC Base - atas.png" id="1_3qc01"]
 [ext_resource type="PackedScene" uid="uid://bjbls5x1onr8r" path="res://Assets/Object/ClipBoard/Clipboard-BuSinta.tscn" id="2_l1up5"]
 
 [node name="Path-kantor" type="Node2D"]

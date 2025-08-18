@@ -1,22 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://bq5ec04gmljl8"]
+[gd_scene load_steps=8 format=3 uid="uid://bq5ec04gmljl8"]
 
 [ext_resource type="Script" uid="uid://xutjjr7sol52" path="res://Assets/Character/Mba-Berlina/MbaBerlina.gd" id="1_2hlel"]
-[ext_resource type="Texture2D" uid="uid://c6443a36jp2cu" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/MbaBerlina-Normal-placeholder.png" id="2_38htk"]
-[ext_resource type="Texture2D" uid="uid://ckxqjm2ncfiwh" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/MbaBerlina-Blink-placeholder-1.png" id="3_4lg42"]
-[ext_resource type="Texture2D" uid="uid://ba8bydc2cl7x" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/MbaBerlina-SLeft-placeholder.png" id="4_ms7da"]
-[ext_resource type="Texture2D" uid="uid://tcu0ohqsihn7" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/MbaBerlina-SRight-placeholder.png" id="5_xekdc"]
+[ext_resource type="Texture2D" uid="uid://c07wdafsvch0s" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/Mba Berlina - diem.png" id="1_2qxsa"]
+[ext_resource type="Texture2D" uid="uid://bxyincrkg6eix" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/Mba Berlina - merem.png" id="2_yd1sj"]
+[ext_resource type="Texture2D" uid="uid://cehpdc3ol7k2x" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/Mba Berlina - lirik kiri.png" id="3_8dhrh"]
+[ext_resource type="Texture2D" uid="uid://c0eumib0736n3" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/Mba Berlina - lirik kanan.png" id="4_508qe"]
+[ext_resource type="Texture2D" uid="uid://dh4rdd8ffnexh" path="res://Assets/Character/Mba-Berlina/MbaBerlina-Assets/Mba Berlina - khawatir.png" id="5_yd1sj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kcx11"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_38htk")
+"texture": ExtResource("1_2qxsa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_4lg42")
+"texture": ExtResource("2_yd1sj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_38htk")
+"texture": ExtResource("1_2qxsa")
 }],
 "loop": false,
 "name": &"Blink",
@@ -24,23 +25,36 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_38htk")
+"texture": ExtResource("1_2qxsa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ms7da")
+"texture": ExtResource("3_8dhrh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_38htk")
+"texture": ExtResource("1_2qxsa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xekdc")
+"texture": ExtResource("4_508qe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_38htk")
+"texture": ExtResource("1_2qxsa")
 }],
 "loop": false,
 "name": &"Look_Around",
 "speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yd1sj")
+}],
+"loop": true,
+"name": &"Scared",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Talk",
+"speed": 5.0
 }]
 
 [node name="Mba-berlina" type="Node2D"]
@@ -49,7 +63,7 @@ animations = [{
 position = Vector2(-2.00002, -40.6096)
 scale = Vector2(0.690476, 0.690476)
 sprite_frames = SubResource("SpriteFrames_kcx11")
-animation = &"Blink"
+animation = &"Scared"
 script = ExtResource("1_2hlel")
 
 [node name="Timer" type="Timer" parent="."]

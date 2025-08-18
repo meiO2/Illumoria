@@ -1,22 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://vkjttmf1ep1n"]
+[gd_scene load_steps=8 format=3 uid="uid://vkjttmf1ep1n"]
 
-[ext_resource type="Texture2D" uid="uid://ds4w60fmg63ro" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/BuKanti-Normal-placeholder.png" id="1_2eb1e"]
-[ext_resource type="Texture2D" uid="uid://chgqf3jbadi0i" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/BuKanti-Blink-placeholder.png" id="2_efkj3"]
-[ext_resource type="Texture2D" uid="uid://bv0bljwt5g0fn" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/BuKanti-SLeft-placeholder.png" id="3_2qrp4"]
-[ext_resource type="Texture2D" uid="uid://dux0d2kcpitbl" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/BuKanti-SRight-placeholder.png" id="4_qaalf"]
+[ext_resource type="Texture2D" uid="uid://df1k14rr3cnna" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/Bu Kanti - diem.png" id="1_77ptk"]
+[ext_resource type="Texture2D" uid="uid://crbffqjfjwf10" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/Bu Kanti - merem diem.png" id="2_0uflf"]
+[ext_resource type="Texture2D" uid="uid://b4uyxuyho1vyy" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/Bu Kanti - lirik kiri.png" id="3_20cog"]
+[ext_resource type="Texture2D" uid="uid://bbvax00yx0rlt" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/Bu Kanti - lirik kanan.png" id="4_dt2s1"]
 [ext_resource type="Script" uid="uid://dsvrh5usi2yvh" path="res://Assets/Character/Bu-Kanti/BuKanti.gd" id="5_efkj3"]
+[ext_resource type="Texture2D" uid="uid://bn2eeeqbags87" path="res://Assets/Character/Bu-Kanti/BuKanti-Assets/Bu Kanti - ngomong flat.png" id="5_k20mf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e02fb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_2eb1e")
+"texture": ExtResource("1_77ptk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_efkj3")
+"texture": ExtResource("2_0uflf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_2eb1e")
+"texture": ExtResource("1_77ptk")
 }],
 "loop": false,
 "name": &"Blink",
@@ -24,32 +25,43 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_2eb1e")
+"texture": ExtResource("1_77ptk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_2qrp4")
+"texture": ExtResource("3_20cog")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_2eb1e")
+"texture": ExtResource("1_77ptk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qaalf")
+"texture": ExtResource("4_dt2s1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_2eb1e")
+"texture": ExtResource("1_77ptk")
 }],
 "loop": false,
 "name": &"Look_Around",
 "speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_k20mf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_77ptk")
+}],
+"loop": false,
+"name": &"Talk",
+"speed": 0.5
 }]
 
 [node name="BuKanti" type="Node2D"]
 
 [node name="Bu-Kanti" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2.00001, -39.8952)
-scale = Vector2(0.690476, 0.690476)
+position = Vector2(-2.00001, -118.895)
+scale = Vector2(0.279908, 0.279908)
 sprite_frames = SubResource("SpriteFrames_e02fb")
-animation = &"Blink"
+animation = &"Talk"
 script = ExtResource("5_efkj3")
 
 [node name="Timer" type="Timer" parent="."]

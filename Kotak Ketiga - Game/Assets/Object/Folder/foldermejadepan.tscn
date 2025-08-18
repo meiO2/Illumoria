@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://da24a21nosb1u"]
+
+[ext_resource type="Script" uid="uid://mvwa51ps8a7x" path="res://Assets/Object/Folder/foldermeja.gd" id="1_cwpiu"]
+[ext_resource type="Texture2D" uid="uid://cx801fg25ogwh" path="res://Assets/Object/Folder/Group 35.png" id="1_jjiqw"]
+
+[node name="Foldermejadepan" type="Node2D"]
+script = ExtResource("1_cwpiu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jjiqw")
