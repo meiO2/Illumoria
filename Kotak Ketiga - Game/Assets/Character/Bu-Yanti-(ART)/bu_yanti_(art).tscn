@@ -1,22 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://ebgh4yqol4cc"]
+[gd_scene load_steps=8 format=3 uid="uid://ebgh4yqol4cc"]
 
-[ext_resource type="Texture2D" uid="uid://c8sq3i5qjqsgo" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/BuYanti(ART)-Normal-placeholder.png" id="1_r0ygr"]
-[ext_resource type="Texture2D" uid="uid://mlpksgddheqx" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/BuYanti(ART)-Blink-placeholder.png" id="2_qyphc"]
-[ext_resource type="Texture2D" uid="uid://bx4ehjlkpil3v" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/BuYanti(ART)-SLeft-placeholder.png" id="3_cw5xp"]
-[ext_resource type="Texture2D" uid="uid://du0o0rrrnpl8c" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/BuYanti(ART)-SRight-placeholder.png" id="4_iuy4a"]
+[ext_resource type="Texture2D" uid="uid://cu7prheb2sr31" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/Ibu ART - diem.png" id="1_mw5m0"]
+[ext_resource type="Texture2D" uid="uid://3p55mcovmrr6" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/Ibu ART - merem.png" id="2_s211g"]
+[ext_resource type="Texture2D" uid="uid://dalrv0lgt84td" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/Ibu ART - lirik kiri.png" id="3_2fxyd"]
+[ext_resource type="Texture2D" uid="uid://dd7q2s1jw0x1m" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/Ibu ART - lirik kanan.png" id="4_04wp6"]
 [ext_resource type="Script" uid="uid://cchsxp0p24a75" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART).gd" id="5_rbmpg"]
+[ext_resource type="Texture2D" uid="uid://cr25kiwiyayi5" path="res://Assets/Character/Bu-Yanti-(ART)/BuYanti(ART)-Assets/Ibu ART - ngomong flat.png" id="5_swxts"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hgcsx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_r0ygr")
+"texture": ExtResource("1_mw5m0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_qyphc")
+"texture": ExtResource("2_s211g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_r0ygr")
+"texture": ExtResource("1_mw5m0")
 }],
 "loop": false,
 "name": &"Blink",
@@ -24,32 +25,43 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_r0ygr")
+"texture": ExtResource("1_mw5m0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_cw5xp")
+"texture": ExtResource("3_2fxyd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_r0ygr")
+"texture": ExtResource("1_mw5m0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_iuy4a")
+"texture": ExtResource("4_04wp6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_r0ygr")
+"texture": ExtResource("1_mw5m0")
 }],
 "loop": false,
 "name": &"Look_Around",
 "speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_swxts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_mw5m0")
+}],
+"loop": false,
+"name": &"Talk",
+"speed": 0.5
 }]
 
 [node name="Bu-yanti-(art)" type="Node2D"]
 
 [node name="Bu-Yanti-(ART)" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -40)
-scale = Vector2(0.690476, 0.690476)
+position = Vector2(-2, -146)
+scale = Vector2(0.303433, 0.303433)
 sprite_frames = SubResource("SpriteFrames_hgcsx")
-animation = &"Blink"
+animation = &"Talk"
 script = ExtResource("5_rbmpg")
 
 [node name="Timer" type="Timer" parent="."]

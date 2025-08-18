@@ -1,7 +1,7 @@
 extends Node
 
-@onready var buka = $Buka
-@onready var tutup = $Tutup
+@onready var buka = $CanvasLayer/Buka
+@onready var tutup = $CanvasLayer/Tutup
 
 func _ready():
 	buka.visible = false

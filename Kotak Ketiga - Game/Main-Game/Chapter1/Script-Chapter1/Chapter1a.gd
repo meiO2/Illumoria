@@ -20,7 +20,7 @@ var bu_sinta_spawned = false
 var bu_sinta = null
 var is_waiting_for_tutorial = false
 
-var meja_instance: Node = null  # instance meja kalau lagi dibuka
+var meja_instance: Node = null 
 
 func _ready():
 	foldersinta.visible = false

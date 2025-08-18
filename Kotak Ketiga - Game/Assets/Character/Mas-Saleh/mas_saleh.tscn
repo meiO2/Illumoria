@@ -1,22 +1,25 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7naahoowswqj"]
+[gd_scene load_steps=10 format=3 uid="uid://b7naahoowswqj"]
 
-[ext_resource type="Texture2D" uid="uid://3mf31e4n42i3" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/MasSaleh-Normal-placeholder.png" id="1_f4s88"]
-[ext_resource type="Texture2D" uid="uid://ww26chq0tmqc" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/MasSaleh-Blink-placeholder.png" id="2_r1q50"]
-[ext_resource type="Texture2D" uid="uid://dft0jmmwcm6x2" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/MasSaleh-SLeft-placeholder.png" id="3_u6ip2"]
-[ext_resource type="Texture2D" uid="uid://q42mudqwxber" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/MasSaleh-SRight-placeholder.png" id="4_82yyk"]
+[ext_resource type="Texture2D" uid="uid://chtvsb1tft13v" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/Mas Saleh - diem.png" id="1_jo6ek"]
+[ext_resource type="Texture2D" uid="uid://c7bsevea84154" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/Mas Saleh - merem.png" id="2_dvghf"]
+[ext_resource type="Texture2D" uid="uid://3qavsg3bbu5w" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/Mas Saleh - lirik kiri.png" id="3_634vh"]
+[ext_resource type="Texture2D" uid="uid://c6fpspnnbyobg" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/Mas Saleh - lirik kanan.png" id="4_ulp6v"]
 [ext_resource type="Script" uid="uid://da8imfewi802j" path="res://Assets/Character/Mas-Saleh/MasSaleh.gd" id="5_n157n"]
+[ext_resource type="Texture2D" uid="uid://dd5q1n47m6pku" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/Mas Saleh - ngomong senyum.png" id="5_ulp6v"]
+[ext_resource type="Texture2D" uid="uid://g1mvqihmabpg" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/Mas Saleh - senyum.png" id="6_u126j"]
+[ext_resource type="Texture2D" uid="uid://dgajn8dkgl1oy" path="res://Assets/Character/Mas-Saleh/MasSaleh-Assets/Mas Saleh - senyum ^w^.png" id="7_8h6al"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o7x4m"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_f4s88")
+"texture": ExtResource("1_jo6ek")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_r1q50")
+"texture": ExtResource("2_dvghf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_f4s88")
+"texture": ExtResource("1_jo6ek")
 }],
 "loop": false,
 "name": &"Blink",
@@ -24,32 +27,54 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_f4s88")
+"texture": ExtResource("1_jo6ek")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_u6ip2")
+"texture": ExtResource("3_634vh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_f4s88")
+"texture": ExtResource("1_jo6ek")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_82yyk")
+"texture": ExtResource("4_ulp6v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_f4s88")
+"texture": ExtResource("1_jo6ek")
 }],
 "loop": false,
 "name": &"Look_Around",
 "speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ulp6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u126j")
+}],
+"loop": true,
+"name": &"Talk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_8h6al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u126j")
+}],
+"loop": true,
+"name": &"Talk_Happy",
+"speed": 5.0
 }]
 
 [node name="MasSaleh" type="Node2D"]
 
 [node name="Mas-Saleh" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2.00002, -40.1619)
-scale = Vector2(0.690476, 0.690476)
+position = Vector2(-2.00002, -119.162)
+scale = Vector2(0.274393, 0.274393)
 sprite_frames = SubResource("SpriteFrames_o7x4m")
-animation = &"Look_Around"
+animation = &"Blink"
 script = ExtResource("5_n157n")
 
 [node name="Timer" type="Timer" parent="."]

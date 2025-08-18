@@ -60,8 +60,8 @@ animations = [{
 [node name="Mba-berlina" type="Node2D"]
 
 [node name="Mba-Berlina" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2.00002, -40.6096)
-scale = Vector2(0.690476, 0.690476)
+position = Vector2(-2.00002, -121.61)
+scale = Vector2(0.281749, 0.281749)
 sprite_frames = SubResource("SpriteFrames_kcx11")
 animation = &"Scared"
 script = ExtResource("1_2hlel")
