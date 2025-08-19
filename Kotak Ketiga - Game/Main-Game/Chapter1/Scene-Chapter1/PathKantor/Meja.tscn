@@ -1,15 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbcovpsdhj2vb"]
+[gd_scene load_steps=6 format=3 uid="uid://bbcovpsdhj2vb"]
 
 [ext_resource type="Texture2D" uid="uid://86j3j4u4kd3w" path="res://Assets/Area/Meja MC Base - atas.png" id="1_3qc01"]
+[ext_resource type="Script" uid="uid://d2gqookyywg8w" path="res://Main-Game/Chapter1/Script-Chapter1/CekBerkas.gd" id="1_pua0f"]
 [ext_resource type="PackedScene" uid="uid://bjbls5x1onr8r" path="res://Assets/Object/ClipBoard/Clipboard-BuSinta.tscn" id="2_l1up5"]
+[ext_resource type="Texture2D" uid="uid://sbemtpo8oapb" path="res://Assets/Area/Base.png" id="3_f6n85"]
+[ext_resource type="PackedScene" uid="uid://c7n6462slb47c" path="res://Assets/Object/Folder/Folder.tscn" id="3_l1up5"]
 
-[node name="Path-kantor" type="Node2D"]
+[node name="Meja" type="Node2D"]
+script = ExtResource("1_pua0f")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(7.27596e-12, 5)
 scale = Vector2(0.563333, 0.563333)
 texture = ExtResource("1_3qc01")
 
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(-614.585, -383.454)
+scale = Vector2(2.49389, 1.84122)
+texture = ExtResource("3_f6n85")
+
+[node name="Label" type="Label" parent="Background/Sprite2D"]
+offset_left = -96.0
+offset_top = -58.0
+offset_right = 95.0
+offset_bottom = -35.0
+
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Clipboard" parent="." instance=ExtResource("2_l1up5")]
+
+[node name="Folder" parent="." instance=ExtResource("3_l1up5")]

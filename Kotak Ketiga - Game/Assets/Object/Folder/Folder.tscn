@@ -16,8 +16,8 @@ script = ExtResource("1_ltw8s")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Buka" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(-279, 6)
-scale = Vector2(0.721128, 0.721128)
+position = Vector2(-496, 115)
+scale = Vector2(0.792201, 0.792201)
 texture = ExtResource("1_xtlkt")
 script = ExtResource("3_6wglv")
 
@@ -78,6 +78,22 @@ offset_right = 188.0
 offset_bottom = 257.0
 metadata/_edit_use_anchors_ = true
 
+[node name="ID CARD" type="Sprite2D" parent="CanvasLayer/Buka"]
+position = Vector2(109.821, -145.165)
+scale = Vector2(0.123047, 0.123047)
+texture = ExtResource("3_vmmqj")
+
+[node name="ID" type="Button" parent="CanvasLayer/Buka/ID CARD"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.00845666
+anchor_bottom = 0.015625
+offset_left = -471.0
+offset_top = -252.0
+offset_right = 471.0
+offset_bottom = 252.0
+metadata/_edit_use_anchors_ = true
+
 [node name="Pembatas" type="Sprite2D" parent="CanvasLayer/Buka"]
 position = Vector2(322.375, 0.0386856)
 scale = Vector2(0.116457, 0.116457)
@@ -85,7 +101,8 @@ texture = ExtResource("2_g7d7q")
 
 [node name="Tutup" type="Sprite2D" parent="CanvasLayer"]
 visible = false
-position = Vector2(185, 0)
+position = Vector2(-350, 115)
+scale = Vector2(0.791892, 0.791892)
 texture = ExtResource("2_x2kv6")
 
 [node name="Button" type="Button" parent="CanvasLayer/Tutup"]
@@ -101,4 +118,5 @@ metadata/_edit_use_anchors_ = true
 [connection signal="pressed" from="CanvasLayer/Buka/ID CARD2/ID" to="CanvasLayer/Buka" method="_on_id_pressed"]
 [connection signal="pressed" from="CanvasLayer/Buka/SlipGaji/SlipGaji" to="CanvasLayer/Buka" method="_on_slip_gaji_pressed"]
 [connection signal="pressed" from="CanvasLayer/Buka/Surat Tanah/SuratTanah" to="CanvasLayer/Buka" method="_on_surat_tanah_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buka/ID CARD/ID" to="CanvasLayer/Buka" method="_on_id_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tutup/Button" to="." method="_on_button_pressed"]

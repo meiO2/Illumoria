@@ -23,9 +23,9 @@ func _ready():
 func _input(event):
 	if event is InputEventKey and event.pressed and event.keycode == KEY_X: 
 		if at_first_position:
-			clip.position = Vector2(721.0, 27.146)
-		else:
 			clip.position = Vector2(359.0, 27.146)
+		else:
+			clip.position = Vector2(721.0, 27.146)
 		at_first_position = !at_first_position
 
 func _on_nama_pressed() -> void:
