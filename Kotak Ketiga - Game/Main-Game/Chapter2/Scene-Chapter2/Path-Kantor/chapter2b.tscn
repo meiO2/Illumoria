@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://qag8105tyje7"]
+
+[ext_resource type="Script" uid="uid://b4btujry1dd7d" path="res://Main-Game/Chapter2/Script-Chapter2/chapter_2b.gd" id="1_c5rcf"]
+[ext_resource type="Script" uid="uid://dtu2nmnxtyfj1" path="res://System/dialog_script.gd" id="2_oeixu"]
+[ext_resource type="PackedScene" uid="uid://5n0kel01sev3" path="res://ui/Dialogbox/dialog_box.tscn" id="3_d32lq"]
+[ext_resource type="Texture2D" uid="uid://dgqk12vilmnds" path="res://Assets/Area/Depan rumah Pak Dewa - pintu kebuka.png" id="4_c5rcf"]
+[ext_resource type="PackedScene" uid="uid://bqk4eoe54tl3r" path="res://Assets/Character/Pak-Hari/pak_hari.tscn" id="5_efupd"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_c5rcf")
+
+[node name="DialogManager" type="Node2D" parent="."]
+script = ExtResource("2_oeixu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="DialogManager"]
+
+[node name="DialogBox" parent="DialogManager/CanvasLayer" instance=ExtResource("3_d32lq")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_c5rcf")
+
+[node name="Pak Hari" parent="." instance=ExtResource("5_efupd")]
+visible = false
+position = Vector2(1491, 47)

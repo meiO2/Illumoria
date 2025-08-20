@@ -28,5 +28,4 @@ grow_vertical = 2
 texture = ExtResource("4_18otc")
 
 [node name="Pak Hari" parent="." instance=ExtResource("5_oohxi")]
-visible = false
-position = Vector2(1491, 47)
+position = Vector2(806, 0)
