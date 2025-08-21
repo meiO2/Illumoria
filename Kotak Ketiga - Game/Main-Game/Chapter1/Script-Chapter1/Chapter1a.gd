@@ -5,9 +5,8 @@ extends Node
 @onready var PakHari = $"Pak Hari/Pak-Hari"
 @onready var pakhari = $"Pak Hari"
 @onready var BuSintaScene = preload("res://Assets/Character/Bu-Sinta/bu_sinta.tscn")
-@onready var meja_scene = preload("res://Main-Game/Chapter1/Scene-Chapter1/PathKantor/Meja.tscn")
+@onready var meja_scene = $detailmeja/Meja
 @onready var folder = $detailmeja
-@onready var meja_container = $detailmeja
 @onready var tutorial_page = $"Meja-Kantor-Mas-Adi/Tutorial/CanvasLayer3"
 @onready var tutorial_node = $"Meja-Kantor-Mas-Adi/Tutorial"
 @onready var tutorial_button = $"Meja-Kantor-Mas-Adi/Tutorial/item"
@@ -117,22 +116,16 @@ func _on_all_dialog_finished():
 
 func _input(event):
 	if event is InputEventKey and event.pressed and event.keycode == KEY_W:
-		if meja_instance:
-			print("Tutup Meja")
-			meja_instance.queue_free()
-			meja_instance = null
-			folder.visible = false
+		print("Tutup Meja")
+		meja_scene.visible = false
+		folder.visible = false
 
 	if event is InputEventKey and event.pressed and event.keycode == KEY_S:
-		if meja_instance == null:
-			print("Buka Meja")
-			meja_instance = meja_scene.instantiate()
-			meja_container.add_child(meja_instance)
-			folder.visible = true
-			
-	if event is InputEventKey and event.pressed and event.keycode == KEY_F:
-		if meja_instance == null:
-			$Foldermejadepan.visible = false
-			meja_instance = meja_scene.instantiate()
-			meja_container.add_child(meja_instance)
-			folder.visible = true
+		print("Buka Meja")
+		meja_scene.visible = true
+		folder.visible = true
+	if foldersinta.visible == true:
+		if event is InputEventKey and event.pressed and event.keycode == KEY_F:
+			if meja_instance == null:
+				$Foldermejadepan.visible = false
+				folder.visible = true
